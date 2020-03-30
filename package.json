@@ -8,7 +8,7 @@
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel index.html",
-    "parcel:build": "parcel build index.html",
+    "parcel:build": "npx -p parcel-bundler parcel build index.html",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "author": "",
