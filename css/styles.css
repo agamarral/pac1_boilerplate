@@ -1,8 +1,41 @@
-.container {
-    display: flex;
-  }
+body {
+  font-family: 'Martel Sans', sans-serif;
 
-  div.sticky {
-    position: sticky;
-    top: 0;
-  }
+}
+.headerMain{
+  margin-bottom:75px;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: cadetblue;
+  background: no-repeat center center;
+  background-size: cover;
+  background-image: url('../img/lego-block.jpg');
+}
+.planblue{
+  background-color: #3685b0;
+}
+.doyellow{
+  background-color: #edb74b;
+}
+.checkgreen{
+  background-color: #8fba51;  
+}
+.actred{
+  background-color: #e55f3a;
+}
+.list-group-item-blue { 
+  border: 2px solid #3685b0;
+  color:#3685b0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+h3, img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.fa {
+  font-size: 16px;
+}
+iframe {
+  border: 2px solid #3685b0;
+}

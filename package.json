@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
-    "parcel:dev": "parcel index.html",
-    "parcel:build": "npx -p parcel-bundler parcel build index.html",
+    "parcel:dev": "parcel index.html languages_page.html ",
+    "parcel:build": "npx -p parcel-bundler parcel build index.html languages_page.html",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "author": "",
@@ -18,5 +18,10 @@
     "cssnano": "^4.1.10",
     "npm-run-all": "^4.1.5",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
   }
 }
