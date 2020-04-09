@@ -6,19 +6,18 @@
   "scripts": {
     "commit": "git-cz",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm-run-all clean lint prettier:fix prettier:check parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "dev": "npm-run-all clean lint prettier:fix parcel:dev",
+    "build": "npm-run-all clean prettier:check parcel:build",
     "lint": "eslint --fix js/*.js ",
     "prettier:fix": "prettier --write \"{css/*.css,*.html}\"",
     "prettier:check": "prettier --check \"{css/*.css,*.html}\"",
-    "prerelease": "git add css/*.css *.html js/*.js img/*.* .*.json",
+    "prerelease": "git add css/*.css *.html js/*.js img/*.* .*.json package.json",
     "parcel:dev": "parcel index.html languages_page.html ",
     "parcel:build": "npx -p parcel-bundler parcel build index.html languages_page.html",
     "clean": "rimraf dist .cache .cache-loader",
     "release": "standard-version -a",
     "postrelease": "run-s release:*",
-    "release:tags": "git push --follow-tags origin master",
-    "release:github": "conventional-github-releaser -p angular"
+    "release:tags": "git push --follow-tags origin master"
   },
   "config": {
     "commitizen": {
