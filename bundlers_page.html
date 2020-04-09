@@ -1,79 +1,215 @@
 <html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap CSS local fallback -->
+        <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css" />
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Bootstrap CSS local fallback -->
-    <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css">
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <body>
+        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#myNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo.png" width="78" heigth="69"
+            /></a>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
+                            >escriure el codi</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="html.html">HTML</a>
+                            <a class="dropdown-item" href="css.html">CSS</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        </div>
+                    </li>
 
-<body>
+                    <li class="nav-item active">
+                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
+        <header class="headerMain">
+            <div class="container h-300"></div>
+        </header>
 
-    <nav class="navbar bg-info navbar-dark navbar-expand-SM">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="index.html" class="navbar-brand"> <img src='./img/logo.png' width='78' heigth="69"></a>
-        <div class="collapse navbar-collapse" id="myNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a href="./design_page.html" class="nav-link">dissenyar el lloc</a></li>
-                <li class="nav-item"><a href="./languages_page.html" class="nav-link">escriure el codi</a></li>
-                <li class="nav-item active"><a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
-                </li>
-                <li class="nav-item"><a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a></li>
-                <li class="nav-item"><a href="./my_first_website.html" class="nav-link">el meu primer lloc web</a></li>
-            </ul>
-        </div>
+        <div class="container">
+            <div class="jumbotron checkgreen">
+                <h1 class="h1 text-white">Embolcalla el teu lloc web</h1>
+                <p class="lead text-white">
+                    Un cop el teu lloc estigui llest, s'ha d'acabar de preparar per publicar-lo.
+                    Imagina que vols enviar un regal a una amiga, primer l'has d'embolicar en paper
+                    regal i has de preparar l'enviament, doncs amb el teu web s'ha de fer el mateix.
+                </p>
+            </div>
 
-    </nav>
-
-    <header class="headerMain">
-        <div class="container h-300">
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="jumbotron checkgreen">
-            <h1 class="h1 text-white">Embolcalla el teu lloc web</h1>
-            <p class="lead text-white">Un cop el teu lloc estigui llest, s'ha d'acabar de preparar per publicar-lo.
-                Imagina que vols enviar un regal a una amiga, primer l'has d'embolicar en paper regal i has de preparar
-                l'enviament, doncs amb el teu web s'ha de fer el mateix.
+            <p class="align-self-center">
+                Un cop has acabat d'escriure el teu codi, cal posar una mica d'ordre i preparar els
+                fitxers necessaris i imprescindibles per a que el teu lloc web funcioni
+                perfectament. Aquests fitxers són els que el teu navegador descarregarà quan una
+                usuària accedeixi al teu lloc, per tant, quan més lleugers siguin, més ràpidament es
+                carregaran les teves pàgines i això es nota especialment en zones on la velocitat
+                d'accès a Internet no és massa alta. D'altra banda, és important que el lloc web
+                estigui ben provat i que als usuaris no els apareguin errades quan naveguen o
+                manipulen la nostra aplicació web. És interessant automatitzar les proves al màxim
+                ja que provar a ma requereix molt mètode, molta paciència i, sobretot, molt temps.
             </p>
+            <p class="align-self-center">
+                Si resumim, abans de carregar el teu lloc web caldrà :
+            </p>
+
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-header h5 text-center">
+                            Compil·lar-la
+                        </div>
+                        <div class="card-img-top text-center">
+                            <img src="img/build_sw.jpg" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text bundler-card-text">
+                                Per compil·lar un lloc web fem servir
+                                <i>gestors de paquets</i> que fan del teu lloc web un paquet més i
+                                s'asseguren de que totes les dependències, o altrament dit, tot el
+                                software extern que fem servir en la nostra aplicació, estan ben
+                                actualitzades a la versió que toca. Així mateix els gestors de
+                                paquets permeten automatitzar les tasques de compil·lació de
+                                fitxers, preparació de la distribució, empaquetament i proves. És a
+                                dir, l'ús del paquet bundler i de l'autòmata de proves es
+                                control·len també des del gestor de paquets. Un gestor de paquets ve
+                                a ser com una cadena de muntatge de SW on el resultat de cada
+                                tractament es fa passar per una altre procès i així fins arribar a
+                                tenir el lloc llest per publicar.
+                                <br />
+                                <br />
+                                Els <i>package managers</i> més populars en l'actualitat són:
+
+                                <span>
+                                    <a href="https://www.npmjs.com">npm</a>,
+                                    <a href="https://yarnpkg.com">yarn</a> i
+                                    <a href="https://bower.io">bower</a></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-header h5 text-center">
+                            Empaquetar-la
+                        </div>
+                        <div class="card-img-top text-center">
+                            <img src="img/gif-packaging-4.gif" class="img-fluid img-thumbnail" />
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text bundler-card-text">
+                                Per empaquetar una aplicació web fem servir
+                                <i>package bundlers </i> que, com el seu nom indica, fan un farcell
+                                amb tots els fitxers del lloc. Bàsicament recuperen tot el codi i el
+                                condensen en el mínim espai possible. Per exemple, el·liminen els
+                                espais en blanc dels fitxers html i css per tal de reduir el seu
+                                tamany o comprimeixen les imatges. <br />
+                                <br />
+                                Una altra funcionalitat interessant dels
+                                <i>package bundlers</i> és que només posen al farcell aquells
+                                fitxers que es fan servir al teu lloc web. És bastant ususal que es
+                                quedin fitxers que després no fas servir, com per exemple una imatge
+                                que t'agradava inicialment però que has finalment remplaçat per una
+                                altra que t'agradava més, el <i>bundler</i>
+                                simplement no les sel·lecciona per ser incloses a la distribució.
+                                <br />
+                                <br />
+                                Els <i>package bundlers</i> més populars en l'actualitat són:
+                                <span>
+                                    <a href="https://parceljs.org">parcel</a>,
+                                    <a href="https://webpack.js.org">webpack</a>
+                                    i
+                                    <a href="http://browserify.org">browserify</a></span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md col-sm">
+                    <div class="card">
+                        <div class="card-header h5 text-center">Provar-la</div>
+                        <div class="card-img-top text-center">
+                            <img
+                                src="img/Computer-Based-Testing.jpg"
+                                class="img-fluid img-thumbnail"
+                            />
+                        </div>
+                        <div class="card-block">
+                            <div class="card-text bundler-card-text">
+                                Per provar una aplicació web fem servir aplicacions que permeten
+                                passar automàticament, els scripts de proves que prèviament escrivim
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- jQuery local fallback -->
-    <script>
-        window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
-    </script>
-    <!-- popper CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS local fallback -->
-    <script>if (typeof ($.fn.modal) === 'undefined') {
-            document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
-            $("head").prepend('<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">');
-        } </script>
-
-</body>
-
-
-
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery local fallback -->
+        <script>
+            window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
+        </script>
+        <!-- popper CDN-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS CDN -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS local fallback -->
+        <script>
+            if (typeof $.fn.modal === 'undefined') {
+                document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
+                $('head').prepend(
+                    '<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">'
+                );
+            }
+        </script>
+    </body>
 </html>

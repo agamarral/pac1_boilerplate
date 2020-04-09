@@ -1,0 +1,196 @@
+<html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap CSS local fallback -->
+        <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css" />
+        <!--font family-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#myNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo.png" width="78" heigth="69"
+            /></a>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
+                            >escriure el codi</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item active" href="html.html">HTML</a>
+                            <a class="dropdown-item" href="css.html">CSS</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="headerMain">
+            <div class="container h-300"></div>
+        </header>
+
+        <div class="container">
+            <h3>Què podem dir d'HTML?</h3>
+            <ul>
+                <li>
+                    Que les seves sigles signifiquen
+                    <i>HyperText Markup Language</i>, el que significa que és un llenguatge marcat
+                    o, dit amb d'altres paraules, que fa servir etiquetes per definir tipus
+                    d'elements que es volen mostrar en un document. A continuació us presento un
+                    exemple de llenguatge marcat:
+                    <div class="jumbotron jumbotron-code rounded-0">
+                        <pre><code>
+                    &lt;recepta&gt;
+                        &lt;titol&gt;Truita a la francesa&lt;/titol&gt;
+                        &lt;llista_ingredients&gt;
+                            &lt;ingredient&gt;2 ous frescos&lt;/ingredient&gt;
+                            &lt;ingredient&gt;1 polsim de sal&lt;/ingredient&gt;
+                            &lt;ingredient&gt;1 cullerada oli oliva&lt;/ingredient&gt;
+                        &lt;/llista_ingredients&gt;
+                        &lt;preparacio&gt;
+                            Tira els ous en un plat fondo i afegeix la sal
+                            Amb una forquilla o un batedor de ma bate'ls amb energia durant 3 minuts
+                            Posa aL foc una paella i tira-hi l'oli
+                            Quan l'oli estigui calent abaixa el foc a nivell mig, aboca-hi la barreja d'ou i sal i quan hi hagi una capa d'ou cuallat 
+                            d'uns dos milímetres, plega les vores d'aquesta cap al centre, fins a formar un rectangle. Gira la truita i deixa coure 1 minut mes
+                            Serveix amb pa amb tomàquet
+                        &lt;/preparacio&gt;
+                    &lt;/recepta&gt;
+                    </code></pre>
+                    </div>
+                    Les etiquetes s'enmarquen sempre entre els caracters
+                    <code>&lt;</code> i <code>&gt;</code> i per cada etiqueta d'obertura (<cite
+                        >e.g.</cite
+                    >
+                    <code>&lt;llista_ingredients&gt;</code>) n'hi ha d'haver una de tancament (<cite
+                        >e.g.</cite
+                    >
+                    <code>&lt;/llista_ingredients&gt;</code>) on l'identificador del tab va precedit
+                    d'un caràcter /).
+                </li>
+                <li>
+                    Que des de la seva invenció l'any 1980 ha tingut 5 grans versions. Actualment
+                    els navegadors interpreten la versió HTML5
+                </li>
+                <li>
+                    Que té prop de 100 tags diferents que defineixen elements que es troben en una
+                    web com és el cas de títols, camps de formularis, imatges i vídeos.
+                </li>
+            </ul>
+            <h3>Com pots aprendre HTML?</h3>
+            <p>
+                Doncs hi ha infinitat de tutorials de tot tipus per internet per aprendre a
+                programar en HTML. Jo et recomano els següents:
+            </p>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a
+                                href="https://developer.mozilla.org/ca/docs/Learn/HTML/Introducció_al_HTML/Getting_started"
+                                >Introducció Mozilla a HTML</a
+                            >: Aquest tutorial està escrit pels nois de Mozilla (editor de Firefox)
+                            i està redactat en perfecte català de Girona.
+                        </li>
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a href="https://www.w3schools.com/html/html_intro.asp"
+                                >HTML tutorial de W3Schools.</a
+                            >: Aquest tutorial presenta l'avantatge d'incloure un editor online com
+                            el que et mostro a continuació que permet anar provant els conceptes que
+                            va explicant.
+                        </li>
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a
+                                href="https://es.khanacademy.org/computing/hour-of-code/hour-of-html/pt/html-basics"
+                                >Conceptos básicos de HTML</a
+                            >: Si et van més els vídeos, pots provar aquest tutorial de Khan Academy
+                            el qual està disponible en anglès i en castellà.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <img src="img/w3schools.png" class="img-fluid" alt="editor online W3Schools" />
+                </div>
+            </div>
+            <br /><br />
+            <p>
+                Quan ja siguis una experta en html, pots passar a l'etapa següent, aprèn a donar
+                format a les teves pàgines amb
+                <a href="css.html"><i class="fa fa-css3" aria-hidden="true">CSS</i></a>
+            </p>
+        </div>
+
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery local fallback -->
+        <script>
+            window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
+        </script>
+        <!-- popper CDN-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS CDN -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS local fallback -->
+        <script>
+            if (typeof $.fn.modal === 'undefined') {
+                document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
+                $('head').prepend(
+                    '<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">'
+                );
+            }
+        </script>
+    </body>
+</html>

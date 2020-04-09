@@ -1,146 +1,200 @@
 <html lang="ca">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!-- Bootstrap CSS local fallback -->
+        <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css" />
+        <!--font family-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
 
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- Bootstrap CSS local fallback -->
-    <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css">
-    <!--font family-->
-    <link href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <body>
+        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#myNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <img src="./img/logo.png" width="78" heigth="69"
+            /></a>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
+                            >escriure el codi</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="html.html">HTML</a>
+                            <a class="dropdown-item" href="css.html">CSS</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        </div>
+                    </li>
 
-<body>
-
-
-    <nav class="navbar bg-info navbar-dark navbar-expand-SM">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a href="index.html" class="navbar-brand"> <img src='./img/logo.png' width='78' heigth="69"></a>
-        <div class="collapse navbar-collapse" id="myNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="./design_page.html" class="nav-link">dissenyar el lloc</a></li>
-                <li class="nav-item"><a href="./languages_page.html" class="nav-link">escriure el codi</a></li>
-                <li class="nav-item"><a href="./bundlers_page.html" class="nav-link">preparar la distribució</a></li>
-                <li class="nav-item"><a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a></li>
-                <li class="nav-item"><a href="./my_first_website.html" class="nav-link">el meu primer lloc web</a></li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <header class="headerMain">
-        <div class="container h-300">
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="jumbotron planblue">
-            <h1 class="h1 text-white">Idea el teu lloc web</h1>
-            <p class="lead text-white">Aquesta tasca no és massa complicada des del punt de vista tècnic però és la més
-                important de tot el procès. Amb un llapis, una goma i un paper pensar en què vols ensenyar-li al món i
-                com ho vols fer..are you ready to go?
-            </p>
-        </div>
-        <p>
-            Primer de tot has de respondre't aquestes tres preguntes:
-        </p>
-        <ul class="list-group">
-            <li class="list-group-item list-group-item-blue">a quins dispositius s'ha de poder veure el teu lloc web?
-            </li>
-            <li class="list-group-item list-group-item-blue">ha de presentar contingut estàtic o necessites que l'usuari
-                hi entri informació?
-            </li>
-            <li class="list-group-item list-group-item-blue">quin tipus de públic esperes que el visiti i quina estètica
-                els agrada?
-            </li>
-        </ul>
-        <br><br>
-        <p class="text-justify">
-            Si el teu lloc web ha de poder visitar-se des d'un mòbil, una tablet o un ordinador, necessitaràs que sigui
-            <a href="https://abakos.es/ca/diseno-web-responsive/"><i>responsive</i></a>, el que vol dir que haurà
-            d'adaptar-se als diferents tamanys de pantalla
-        </p>
-        <p class="text-justify">
-            Si el teu lloc web només ha de presentar informació i la interacció de l'usuari serà mínima, llavors et
-            podràs limitar a escriure'l amb <a href="#">html i css</a> , no et caldrà afegir codi <a
-                href="#">javascript</a>.
-        </p>
-        <p class="text-justify">
-            Finalment l'apariència del teu lloc web haurà d'adaptar-se als gustos i usos del teu públic, no és el mateix
-            fer un web per a que el visitin, per exemple, fans d'un grup de música pop femení que un d'orientat a
-            celebrar les
-            noces d'or dels teux avis. Una bona pràctica és que abans de començar a fer el teu disseny, visitis molts
-            llocs dirigits al mateix públic que hauria de visitar el teu i que apuntis totes les coses que t'agraden
-            d'aquests llocs i també aquélles que no t'agraden i que has d'evitar. Pots fixar-te en quina gama de colors
-            fan servir, quin tipus de lletres i d'imatges, com està distribuïda la informació en les diferents pàgines,
-            si tenen barra de mennú o no, peu de pàgina, etc...
-        </p>
-        <h3 class="h3">Prepara el mapa del lloc</h3>
-        <div class="row">
-            <div class="col-sm text-center">
-                <img src='img/tree-diagram.png' class="img-fluid" alt="exemple de mapa web"><br>
+                    <li class="nav-item">
+                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col align-self-center">
-                <p>Ara ja ha arribat l'hora de fer anar el llapis ...prepara un arbre on cada fulla ha de ser una de les
-                    pàgines del
-                    teu lloc web, lliga les pàgines entre elles per tal de tenir una idea clara de com s'hi accedeix i
-                    què ha de contenir
-                    cadascuna d'elles. En la següent figura us presento el mapa d'aquest lloc. </p>
-            </div>
-        </div>
+        </nav>
 
-        <div class="row">
-            <div class="col">
-                <h3 class="h3">Dibuixa les teves pàgines</h3>
-                <p class="align-self-center">Un cop tinguis clara la distribució de la informació, dibuixa cadascuna de
-                    les pàgines. Pots fer-ho
-                    amb llapis i paper o bé fer servir una eina de dibuix qualsevol. Jo us recomanaria l'ús de <a
-                        href="https://app.diagrams.net">app.diagrams.net</a>
-                    també coneguda pel seu nom anterior : </a><i>draw.io.org</i>. Aquesta aplicació és gratuïta, és
-                    online i conté una col·lecció de formes molt útils per dissenyas maquetes de pàgines web
+        <header class="headerMain">
+            <div class="container h-300"></div>
+        </header>
+
+        <div class="container">
+            <div class="jumbotron planblue">
+                <h1 class="h1 text-white">Idea el teu lloc web</h1>
+                <p class="lead text-white">
+                    Aquesta tasca no és massa complicada des del punt de vista tècnic però és la més
+                    important de tot el procès. Amb un llapis, una goma i un paper pensar en què
+                    vols ensenyar-li al món i com ho vols fer..are you ready to go?
                 </p>
             </div>
-            <div class="col-sm">
-                <img src='img/drawio.png' class="img-fluid" alt="exemple de maqueta web a l'aplicació draw.io">
+            <p>
+                Primer de tot has de respondre't aquestes tres preguntes:
+            </p>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-blue">
+                    a quins dispositius s'ha de poder veure el teu lloc web?
+                </li>
+                <li class="list-group-item list-group-item-blue">
+                    ha de presentar contingut estàtic o necessites que l'usuari hi entri informació?
+                </li>
+                <li class="list-group-item list-group-item-blue">
+                    quin tipus de públic esperes que el visiti i quina estètica els agrada?
+                </li>
+            </ul>
+            <br /><br />
+            <p class="text-justify">
+                Si el teu lloc web ha de poder visitar-se des d'un mòbil, una tablet o un ordinador,
+                necessitaràs que sigui
+                <a href="https://abakos.es/ca/diseno-web-responsive/"><i>responsive</i></a
+                >, el que vol dir que haurà d'adaptar-se als diferents tamanys de pantalla
+            </p>
+            <p class="text-justify">
+                Si el teu lloc web només ha de presentar informació i la interacció de l'usuari serà
+                mínima, llavors et podràs limitar a escriure'l amb
+                <a href="html.html">html</a> i <a href="css.html">css</a>, no et caldrà afegir codi
+                <a href="javascript.html">javascript</a>.
+            </p>
+            <p class="text-justify">
+                Finalment l'apariència del teu lloc web haurà d'adaptar-se als gustos i usos del teu
+                públic, no és el mateix fer un web per a que el visitin, per exemple, fans d'un grup
+                de música pop femení que un d'orientat a celebrar les noces d'or dels teux avis. Una
+                bona pràctica és que abans de començar a fer el teu disseny, visitis molts llocs
+                dirigits al mateix públic que hauria de visitar el teu i que apuntis totes les coses
+                que t'agraden d'aquests llocs i també aquélles que no t'agraden i que has d'evitar.
+                Pots fixar-te en quina gama de colors fan servir, quin tipus de lletres i d'imatges,
+                com està distribuïda la informació en les diferents pàgines, si tenen barra de mennú
+                o no, peu de pàgina, etc...
+            </p>
+            <h3 class="h3">Prepara el mapa del lloc</h3>
+            <div class="row">
+                <div class="col-sm text-center">
+                    <img
+                        src="img/tree-diagram.png"
+                        class="img-fluid"
+                        alt="exemple de mapa web"
+                    /><br />
+                </div>
+                <div class="col align-self-center">
+                    <p>
+                        Ara ja ha arribat l'hora de fer anar el llapis ...prepara un arbre on cada
+                        fulla ha de ser una de les pàgines del teu lloc web, lliga les pàgines entre
+                        elles per tal de tenir una idea clara de com s'hi accedeix i què ha de
+                        contenir cadascuna d'elles. En la següent figura et presento el mapa
+                        d'aquest lloc.
+                    </p>
+                </div>
             </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3 class="h3">Dibuixa les teves pàgines</h3>
+                    <p class="align-self-center">
+                        Un cop tinguis clara la distribució de la informació, dibuixa cadascuna de
+                        les pàgines. Pots fer-ho amb llapis i paper o bé fer servir una eina de
+                        dibuix qualsevol. Jo us recomanaria l'ús de
+                        <a href="https://app.diagrams.net">app.diagrams.net</a>
+                        també coneguda pel seu nom anterior :
+                        <i>draw.io.org</i>. Aquesta aplicació és gratuïta, és online i conté una
+                        col·lecció de formes molt útils per dissenyas maquetes de pàgines web
+                    </p>
+                </div>
+                <div class="col-sm">
+                    <img
+                        src="img/drawio.png"
+                        class="img-fluid"
+                        alt="exemple de maqueta web a l'aplicació draw.io"
+                    />
+                </div>
+            </div>
+            <p>
+                Un cop hagis enllestit aquestes dues etapes, estàs preparada per començar a escriure
+                el teu codi. Si acceptes el repte omple't de valor i passa al següent nivell
+                <a href="languages_page.html"><i class="fa fa-angle-double-right"></i> </a>
+            </p>
         </div>
-        <p>Un cop hagis enllestit aquestes dues etapes, estàs preparada per començar a escriure el teu codi. Si acceptes
-            el repte omple't de valor i passa al següent nivell <a href="languages_page.html"><i
-                    class="fa fa-angle-double-right"></i> </a></p>
-
-    </div>
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <!-- jQuery local fallback -->
-    <script>
-        window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
-    </script>
-    <!-- popper CDN-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <!-- Bootstrap JS local fallback -->
-    <script>if (typeof ($.fn.modal) === 'undefined') {
-            document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
-            $("head").prepend('<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">');
-        } </script>
-
-</body>
-
-
-
+        <script src="./js/index.js"></script>
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery local fallback -->
+        <script>
+            window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
+        </script>
+        <!-- popper CDN-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS CDN -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS local fallback -->
+        <script>
+            if (typeof $.fn.modal === 'undefined') {
+                document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
+                $('head').prepend(
+                    '<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">'
+                );
+            }
+        </script>
+    </body>
 </html>

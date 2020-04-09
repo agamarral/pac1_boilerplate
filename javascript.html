@@ -12,7 +12,15 @@
         />
         <!-- Bootstrap CSS local fallback -->
         <link rel="stylesheet" href="lib/bootstrap/css//bootstrap.min.css" />
-
+        <!--font family-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
         <link rel="stylesheet" href="css/styles.css" />
     </head>
 
@@ -41,14 +49,14 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="html.html">HTML</a>
                             <a class="dropdown-item" href="css.html">CSS</a>
-                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                            <a class="dropdown-item active" href="javascript.html">Javascript</a>
                         </div>
                     </li>
 
                     <li class="nav-item">
                         <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
                     </li>
                     <li class="nav-item">
@@ -57,21 +65,12 @@
                 </ul>
             </div>
         </nav>
+
         <header class="headerMain">
             <div class="container h-300"></div>
         </header>
 
-        <div class="container">
-            <div class="jumbotron actred">
-                <h1 class="h1 text-white">Publica el teu lloc web</h1>
-                <p class="lead text-white">
-                    I ara que ja està llest per presentar-lo en societat, què s'ha de fer per
-                    publicar-lo. Segurament has sentit a parlar de hostings i de dominis però és
-                    probable que això encara et soni una mica a xinès. Aquí t'esclarirem els teus
-                    dubtes.
-                </p>
-            </div>
-        </div>
+        <div class="container"></div>
 
         <!-- jQuery CDN -->
         <script
@@ -104,5 +103,7 @@
                 );
             }
         </script>
+
+        <script type="text/javascript" src="./js/index.js"></script>
     </body>
 </html>
