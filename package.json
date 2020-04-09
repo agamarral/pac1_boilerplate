@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "lint": "eslint --fix js/*.js ",
     "prettier:fix": "prettier --write \"{css/*.css,*.html}\"",
     "prettier:check": "prettier --check \"{css/*.css,*.html}\"",
-    "prerelease": "git add css/*.css *.html js/*.js img/*.* *.json",
+    "prerelease": "git add css/*.css *.html js/*.js img/*.* .*.json",
     "parcel:dev": "parcel index.html languages_page.html ",
     "parcel:build": "npx -p parcel-bundler parcel build index.html languages_page.html",
     "clean": "rimraf dist .cache .cache-loader",
