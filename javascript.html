@@ -47,12 +47,22 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="html.html">HTML</a>
                             <a class="dropdown-item" href="css.html">CSS</a>
-                            <a class="dropdown-item active" href="javascript.html">Javascript</a>
+                            <a class="dropdown-item active" href="javascript.html">JavaScript</a>
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    <li class="nav-item active">
+                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
+                            >preparar la distribució</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="packetmgrs_detail.html"
+                                >Els gestors de paquets</a
+                            >
+                            <a class="dropdown-item" href="bundlers_detail.html"
+                                >Els package bundlers</a
+                            >
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
@@ -68,7 +78,139 @@
             <div class="container h-300"></div>
         </header>
 
-        <div class="container"></div>
+        <div class="container">
+            <h3>Què podem dir de JavaScript?</h3>
+            <ul>
+                <li>
+                    Que és el llenguatge que aporta interactivitat a un lloc web i que, per això,
+                    fins a la seva invenció en 1993 i la seva posterior integració el 1995 al
+                    navegador Netscape, els llocs webs eren purament estàtics, permetien mostrar
+                    informació però no recollir-la. Fins el 2008 els editors de navegadors més
+                    importants (microsoft, Google, Mozilla) no es van posar d'acord en una versió
+                    estàndar de JavaScript que es va dir ECMAScript 5 (es diu així perquè la
+                    companyia que el va estandarditzar es diu ECMA).
+                </li>
+
+                <li>
+                    Que JavaScript és un llenguatge no tipat, el que vol dir que el programador té
+                    llibertat per redefinir el tipus de les variables el que dona molta flexibilitat
+                    però que també li treu robustesa. Per exemple,
+                    <div class="jumbotron jumbotron-code rounded-0">
+                        <pre><code>
+        a = 'sóc una cadena de caracters'
+        // b és un nombre
+        b = 5
+        // aquesta funció s'executarà sense problemes
+        c = a*b
+        // però el resultat no serà l'esperat, c serà NaN (Not a Number)
+        NaN 
+    </code></pre>
+                    </div>
+                    <br />
+                    Com pots veure en aquest exemple, encara que jo hagi escrit malament el meu
+                    codi, el compil·lador no m'avisa de que una cadena de caracters no es pot
+                    multiplicar per un nombre i, per tant, la meva variable c prendrà un valor que
+                    no em servirà per res a la meva aplicació. És per això que per a poder estar
+                    segurs de que el codi JavaScript és correcte, cal invertir molt esforç i molt de
+                    temps en provar-lo. És per això que s'hi ha creat Typescript que és un
+                    pseudollenguatge que afegeix el control de tipus i que es tradueix a JavaScript
+                    en temps de compil·lació. En d'altres paraules, és com una capa de control de
+                    tipus que s'ha afegit per sobre de JavaScript.
+                </li>
+                <li>
+                    Que fins el 2009, JavaScript era un llenguatge que només s'executava a
+                    navegadors. Aquell any, en Ryan Dahl, un noi de 28 anys va revolucionar
+                    l'univers JavaScript creant l'intèrpret
+                    <a href="https://nodejs.org/es/">node.js</a> que permet executer JavaScript des
+                    de linia de comanda, és a dir, des de qualsevol terminal. A partir d'aquell
+                    moment JavaScript va deixar de ser un llenguatge exclusivament dedicat al client
+                    per passar també a executar-se a la banda del servidor.
+                </li>
+            </ul>
+            <h3>Què es pot fer amb JavaScript que no es pugui fer amb HTML i CSS?</h3>
+            <p>Amb JavaScript pots fer coses com aquestes:</p>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-block js-card-text">
+                            <label for="myText">Escriu una frase en el següent quadre</label>
+                            <input type="text" id="myText" />
+                            <button id="myFirstButton">Acceptar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card">
+                        <div class="card-block js-card-text">
+                            <label for="myText">Escull un color</label>
+                            <canvas
+                                id="colorCanvas"
+                                class="color-canvas"
+                                width="100%"
+                                height="100%"
+                            ></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col align-self-center">
+                        <h3>Com pots aprendre JavaScript?</h3>
+                        <p>
+                            De nou, a la web existeixen moltíssims tutorials per aprendre
+                            JavaScript, si n'hem d'escollir alguns, jo et recomano els següents:
+                        </p>
+                    </div>
+
+                    <ul class="list-group">
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a
+                                href="https://developer.mozilla.org/es/docs/Web/JavaScript/Una_re-introducción_a_JavaScript"
+                                >Una re-introducción a JavaScript</a
+                            >: Aquest tutorial està escrit pels nois de Mozilla (editor de Firefox)
+                            i està redactat en castellà d'Almagro.
+                        </li>
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a href="https://www.w3schools.com/js/"
+                                >JavaScript tutorial de W3Schools.</a
+                            >: Aquest tutorial també inclou un editor online que permet anar provant
+                            els conceptes que va explicant.
+                        </li>
+                        <li class="list list-group-item list-group-item-yellow">
+                            <a href="https://www.guru99.com/interactive-javascript-tutorials.html"
+                                >JavaScript Tutorial for Beginners: Learn JavaScript in 5 days</a
+                            >: Aquest tutorial està molt ben estructurat i et pot servir més tard de
+                            manual de referència
+                        </li>
+                    </ul>
+                </div>
+
+                <h3>El depurador</h3>
+                <div class="row">
+                    <div class="col">
+                        <p>
+                            JavaScript és un llenguatge molt flexible i deixa la responsabilitat de
+                            fer un bon codi en mans del desenvolupador. Això té l'inconvenient que
+                            pots cometre moltes errades i que aquestes no es detectin fins el moment
+                            de la seva execució, quan ja és massa tard. És per això que, abans de
+                            publicar un lloc o una aplicació Web, és molt necessari fer proves i per
+                            això, el depurador del navegador és el nostre aliat.
+                        </p>
+                        <p>
+                            Al depurador s'hi pot veure, en tot moment, quina linia de codi s'està
+                            executant i quins valors prenen les variables.
+                        </p>
+                    </div>
+                    <div class="col-md">
+                        <img
+                            src="img/debugger.png"
+                            class="img-fluid"
+                            alt="depurador javascript de Firefox"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- jQuery CDN -->
         <script

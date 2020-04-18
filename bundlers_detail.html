@@ -63,7 +63,7 @@
                             >
                         </div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
                     </li>
                     <li class="nav-item">
@@ -72,20 +72,62 @@
                 </ul>
             </div>
         </nav>
+
         <header class="headerMain">
             <div class="container h-300"></div>
         </header>
 
         <div class="container">
-            <div class="jumbotron actred">
-                <h1 class="h1 text-white">Publica el teu lloc web</h1>
-                <p class="lead text-white">
-                    I ara que ja està llest per presentar-lo en societat, què s'ha de fer per
-                    publicar-lo. Segurament has sentit a parlar de hostings i de dominis però és
-                    probable que això encara et soni una mica a xinès. Aquí t'esclarirem els teus
-                    dubtes.
-                </p>
-            </div>
+            <h3>Els package bundlers</h3>
+            <ul class="list-group">
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://parceljs.org">parcel</a> sembla ser el <i>bundler</i> més
+                    senzill de configurar perquè, simplement, no s'ha de configurar, a més, té
+                    moltes funcionalitats a la versió per defecte de manera que per a un ús de base,
+                    no requereix la instal·lació de plugins adicionals. Detecta automàticament els
+                    tipus de fitxers per la seva extensió i aplica la transformació que va bé en
+                    cada cas sense haver de configurar res. De tots tres <i>bundlers</i> sembla que
+                    és el gestiona més eficientment l'eliminació de codi mort, no només del que
+                    escrius tu sinó també del de les llibreries que s'importen a la teva aplicació.
+                    <br />
+                    Finalment, <a href="https://parceljs.org">parcel</a> integra un servidor web de
+                    desenvolupament on va publicant i actualitzant el teu lloc per a que puguis
+                    veure la seva evolució a mesura que el vas programant.
+                </li>
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://webpack.js.org">webpack</a> sembla imposar-se com el
+                    <i>bundler</i> de referència per a grans aplicacions. Els principals aventatges
+                    de <a href="https://webpack.js.org">webpack</a> són la manera en que gestiona
+                    l'escisió del codi, la recàrrega en calent i la substitució de mòduls en calent.
+                    <br />
+                    Una escisió de codi intel·ligent fa que una aplicació es carregui més ràpidament
+                    ja que només es carreguen les parts que l'usuari necessita a cada moment. Sense
+                    escissió de codi seria necessari carregar tota l'aplicació completa tot i que
+                    només haguéssim de fer servir una simple funció.
+                    <br />
+                    D'altra banda, durant la fase de desenvolupament i de proves, la possibilitat de
+                    recarregar només el darrer tros de codi que has canviat, en calent o, en
+                    d'altres paraules, sense haver de parar la teva aplicació prèviament, fa guanyar
+                    molt de temps quan tens una aplicació molt gran entre mans.
+                    <br />
+                    Per acabar, el gran inconvenient de
+                    <a href="https://webpack.js.org">webpack</a>, sobretot respecte a
+                    <a href="https://parceljs.org">parcel</a>, és la dificultat que presenta
+                    configurar-lo ja que necessita molts <i>plugins</i> complementaris per a fer les
+                    mateixes coses que el darrer ja fa amb la seva versió de base.
+                </li>
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://rollupjs.org/guide/en/">rollup</a> sembla ser el
+                    <i>bundler</i> més adequat per a gestionar llibreries que no tinguin terceres
+                    dependències ja que, de tots tres <i>bundlers</i> és el més complicat de
+                    configurar quan s'han de gestionar aqueste. En la resta de funcionalitats mai
+                    queda el primer. Així per exemple, gestiona molt bé l'eliminació de codi mort
+                    però no tant bé com <a href="https://parceljs.org">parcel</a>. Gestiona molt bé
+                    l'escissió de codi i la càrrega de mòduls en calent però no tant bé com
+                    <a href="https://webpack.js.org">webpack</a> així que clarament és el favorit
+                    per empaquetar aplicacions de tamany mig.
+                </li>
+            </ul>
         </div>
 
         <!-- jQuery CDN -->

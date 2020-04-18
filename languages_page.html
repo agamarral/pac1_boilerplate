@@ -50,12 +50,22 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="html.html">HTML</a>
                             <a class="dropdown-item" href="css.html">CSS</a>
-                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                            <a class="dropdown-item" href="javascript.html">JavaScript</a>
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    <li class="nav-item active">
+                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
+                            >preparar la distribució</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="packetmgrs_detail.html"
+                                >Els gestors de paquets</a
+                            >
+                            <a class="dropdown-item" href="bundlers_detail.html"
+                                >Els package bundlers</a
+                            >
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
@@ -83,36 +93,43 @@
             </div>
             <div class="row"></div>
             <div class="row">
-                <div class="col">
-                    <p class="align-self-center">
-                        Els navegadors web només són capaços d'interpretar 3 llenguatges:
-                        <a href="javascript.html">javascript</a>, <a href="html.html">html</a> i
-                        <a href="css.html">css</a>.
-                    </p>
-                    <p class="align-self-center">
-                        Programar el teu lloc web no t'ha d'espantar, és una tasca accessible a
-                        tothom que tingui una mica de traça amb les noves tecnologies. Per sort, els
-                        programadors d'avui en dia ja no són aquells èssers estranys que teclejaven
-                        molt ràpid i que encertaven les contrassenyes a les pel·lícules d'espies.
-                        Els llenguatges de programació cada cop són de més alt nivell, el que vol
-                        dir que s'acosten poc a poc al nostre llenguatge natural. La programació
-                        comença a introduir-se a les escoles i en un futur no massa llunyà, serà tan
-                        necessari saber programar com saber sumar.
-                    </p>
+                <div class="col align-self-top">
+                    <div class="">
+                        <p>
+                            Els navegadors web només són capaços d'interpretar 3 llenguatges:
+                            <a href="javascript.html">javascript</a>, <a href="html.html">html</a> i
+                            <a href="css.html">css</a>.
+                        </p>
+                        <p>
+                            Programar el teu lloc web no t'ha d'espantar, és una tasca accessible a
+                            tothom que tingui una mica de traça amb les noves tecnologies. Per sort,
+                            els programadors d'avui en dia ja no són aquells èssers estranys que
+                            teclejaven molt ràpid i que encertaven les contrassenyes a les
+                            pel·lícules d'espies. Els llenguatges de programació cada cop són de més
+                            alt nivell, el que vol dir que s'acosten poc a poc al nostre llenguatge
+                            natural. La programació comença a introduir-se a les escoles i en un
+                            futur no massa llunyà, serà tan necessari saber programar com saber
+                            sumar.
+                        </p>
+                        <p>
+                            En aquest tutorial parlarem una mica de cadascun d'aquests llenguatges i
+                            uns donarem
+                            <i>tips</i> de com arribar a dominar-los. Si el teu lloc no ha de
+                            recollir dades dels usuaris i pot tenir continguts més aviat estàtics,
+                            només et caldrà dominar html i CSS. Si li vols aportar una mica de
+                            dinamisme, textos que apareixen i desapareixen o dades que canvien a les
+                            pàgines, llavors et caldrà també aprendre una mica de javascript. Anem
+                            però pas a pas.
+                        </p>
+                    </div>
                 </div>
-                <div class="col-sm">
-                    <img src="img/nerd.png" class="img-fluid" alt="programador raro" />
+                <div class="col-sm align-self-top">
+                    <div class="">
+                        <img src="img/nerd.png" class="img-fluid" alt="programador raro" />
+                    </div>
                 </div>
             </div>
 
-            <p>
-                En aquest tutorial parlarem una mica de cadascun d'aquests llenguatges i uns donarem
-                <i>tips</i> de com arribar a dominar-los. Si el teu lloc no ha de recollir dades
-                dels usuaris i pot tenir continguts més aviat estàtics, només et caldrà dominar html
-                i CSS. Si li vols aportar una mica de dinamisme, textos que apareixen i desapareixen
-                o dades que canvien a les pàgines, llavors et caldrà també aprendre una mica de
-                javascript. Anem però pas a pas.
-            </p>
             <br />
             <p>
                 Primer de tot t'has de fer amb un bon editor de text que et faciliti la feina de
@@ -124,7 +141,7 @@
                 <li>
                     Té un terminal integrat que permet anar compilant el lloc o pujant els fitxers
                     al control de versions mentre vas programant. En aquest terminal es pot també
-                    obrir un intèrprete node que et permeti anar provant expressions Javascript
+                    obrir un intèrprete node que et permeti anar provant expressions JavaScript
                     abans d'afegir-les al codi del teu lloc.
                 </li>
                 <li>
@@ -132,12 +149,17 @@
                     plugins. N'hi ha moltíssims de disponibles i ofereixen totes les funcionalitats
                     que se'ns puguin passar pel cap. A mode de exemple, en el cas de codi HTML i
                     CSS, trobem molts plugins que inclouen plantilles per a facilitar l'escriptura
-                    de pàgines. En el cas de Javascript en trobem que detecten errades de sintaxi
+                    de pàgines. En el cas de JavaScript en trobem que detecten errades de sintaxi
                     mentre escrius el codi o d'altres que te l'arreglen i te'l deixen ben "bonic".
                 </li>
             </ol>
-            En el video següent et proposo un petit tutorial per aprendre a fer anar el Visual
-            Studio Code.
+            <div>
+                <p>
+                    En el video següent et proposo un petit tutorial per aprendre a fer anar el
+                    Visual Studio Code.
+                </p>
+            </div>
+
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe
                     width="1127"
@@ -172,7 +194,7 @@
                 <li class="list-inline-item">
                     <a href="javascript.html"
                         ><i class="fa fa-jsfiddle" aria-hidden="true">
-                            <p>Javascript</p>
+                            <p>JavaScript</p>
                         </i></a
                     >
                 </li>

@@ -51,8 +51,18 @@
                         </div>
                     </li>
 
-                    <li class="nav-item">
-                        <a href="./bundlers_page.html" class="nav-link">preparar la distribució</a>
+                    <li class="nav-item active">
+                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
+                            >preparar la distribució</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="packetmgrs_detail.html"
+                                >Els gestors de paquets</a
+                            >
+                            <a class="dropdown-item" href="bundlers_detail.html"
+                                >Els package bundlers</a
+                            >
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
@@ -301,19 +311,36 @@
                 </li>
                 <li class="list list-group-item list-group-item-yellow">
                     <p>
-                        Finalment, he afegit un seguit de <a>scripts</a> amb l'objectiu de preparar
-                        una <i>release</i>. Primerament el desenvolupador
-                        <cite>AKA known as myself</cite> ha d'executar l'<i>script "prerelease"</i>,
-                        el qual pujarà els canvis al repositori local. Acte seguit procedirà a fer
-                        un <i>"run commit"</i> el qual, d'una banda procedirà a interrogar el
-                        desenvolupador per tal de crear un missatge de <i>commit</i> complet i
-                        tornarà a passar les verificacions de codi (<i>lint-staged</i> i
-                        <i>prettyfier</i>)
+                        Seguidament, he afegit un seguit de <a>scripts</a> amb l'objectiu
+                        d'enregistrar els canvis al repositori local. Primerament el desenvolupador
+                        <cite>AKA known as myself</cite> ha d'executar <i>"run commit"</i> el qual,
+                        d'una banda procedirà a interrogar el desenvolupador per tal de crear un
+                        missatge de <i>commit</i> complet, tornarà a passar les verificacions de
+                        codi (<i>lint</i> i <i>prettyfier</i>), pujarà tots els fitxers modificats
+                        al repository local i acabarà fent un <i>commit</i> en aquest repository.
                     </p>
                 </li>
-
-                <li class="list list-group-item list-group-item-yellow"></li>
-                <li class="list list-group-item list-group-item-yellow"></li>
+                <li class="list list-group-item list-group-item-yellow">
+                    <p>
+                        Finalment, he afegit un seguit de <a>scripts</a> amb l'objectiu de preparar
+                        una <i>release</i>. Quan s'executa l'<i>script postrelease</i> es genera
+                        automàticament el <i>release file</i> i es fa un <i>push</i> al repository
+                        <i>github</i>.
+                    </p>
+                </li>
+                <li class="list list-group-item list-group-item-yellow">
+                    <p>
+                        De manera independent al boilerplate i per tal d'executar-ho des de linia de
+                        commanda, he instal·lat l'eina
+                        <a href="https://www.npmjs.com/package/broken-link-checker"
+                            >broken link checker</a
+                        >
+                        la qual verifica la validesa de les URLs incloses a un lloc web que estigui
+                        carregat. Aquesta eina no sembla ser 100% fiable ja que identifica enllaços
+                        trencats que funcionen en realitat. Aquesta és la raó per la qual he
+                        preferit no integra-la al <i>boilerplate</i>
+                    </p>
+                </li>
             </ul>
         </div>
 

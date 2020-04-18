@@ -50,6 +50,7 @@
                             <a class="dropdown-item" href="javascript.html">Javascript</a>
                         </div>
                     </li>
+
                     <li class="nav-item active">
                         <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
                             >preparar la distribució</a
@@ -63,7 +64,7 @@
                             >
                         </div>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
                     </li>
                     <li class="nav-item">
@@ -72,20 +73,45 @@
                 </ul>
             </div>
         </nav>
+
         <header class="headerMain">
             <div class="container h-300"></div>
         </header>
 
         <div class="container">
-            <div class="jumbotron actred">
-                <h1 class="h1 text-white">Publica el teu lloc web</h1>
-                <p class="lead text-white">
-                    I ara que ja està llest per presentar-lo en societat, què s'ha de fer per
-                    publicar-lo. Segurament has sentit a parlar de hostings i de dominis però és
-                    probable que això encara et soni una mica a xinès. Aquí t'esclarirem els teus
-                    dubtes.
-                </p>
-            </div>
+            <h3>Els gestors de paquets</h3>
+            <ul class="list-group">
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://www.npmjs.com">npm</a> és un gestor de paquets estretament
+                    lligat a <a href="https://nodejs.org/es/">node.js</a> ja que va ser creat pel
+                    mateix equip que aquest i, per tant, serveix tant paquets per al frontend com
+                    per al backend. Al juny del 2019 Node ja havia sobrepassat el milió de paquets
+                    disponibles. És tan popular que permet garantir que està ben provat i, que serà
+                    mantingut durant molt temps. En versions passades
+                    <a href="https://www.npmjs.com">npm</a>
+                    presentava problemes amb l'arbre de dependències, que et diu per a cada paquet
+                    que tu vols descarregar quins altres paquets necessites instal·lar per a que el
+                    primer et funcioni. Sembla però que aquests problemes ja estarien resolts.
+                </li>
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://yarnpkg.com">yarn</a> és el gestor de paquets desenvolupat per
+                    facebook i li ha anat agafant terreny poc a poc a
+                    <a href="https://www.npmjs.com">npm</a>. Sembla ser que és molt més ràpid i
+                    fiable i que mai instal·la el mateix paquet dos cops ja que tot paquet
+                    descarregat es guarda en una caché. Presenta però l'inconvenient que envia les
+                    dades del que descarreguem a facebook.
+                </li>
+                <li class="list list-group-item list-group-item-green">
+                    <a href="https://bower.io">bower</a> és un gestor de paquets que va acabar
+                    deixant de ser mantingut i els seus editors van recomanar als usuaris que
+                    migressin els seus projectes cap a <a href="https://www.npmjs.com">npm</a> i/o
+                    <a href="https://yarnpkg.com">yarn</a>. Sembla ser que gestionava les
+                    dependències molt més eficientment que els dos primers però llavors aquests van
+                    solucionar el problema i l'ús de <a href="https://bower.io">bower</a> va deixar
+                    de tenir sentit. El seu inconvenient més gran és que depèn de
+                    <a href="https://www.npmjs.com">npm</a> per a funcionar.
+                </li>
+            </ul>
         </div>
 
         <!-- jQuery CDN -->
