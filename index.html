@@ -15,6 +15,7 @@
             href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
             rel="stylesheet"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
         <link
             rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,150 +24,34 @@
     </head>
 
     <body>
-        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#myNav"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="index.html" class="navbar-brand">
-                <img src="./img/logo.png" width="78" heigth="69"
-            /></a>
-            <div class="collapse navbar-collapse" id="myNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
-                            >escriure el codi</a
-                        >
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="html.html">HTML</a>
-                            <a class="dropdown-item" href="css.html">CSS</a>
-                            <a class="dropdown-item" href="javascript.html">Javascript</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
-                            >preparar la distribució</a
-                        >
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="packetmgrs_detail.html"
-                                >Els gestors de paquets</a
-                            >
-                            <a class="dropdown-item" href="bundlers_detail.html"
-                                >Els package bundlers</a
-                            >
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <header class="headerMain">
-            <div class="container h-300"></div>
-        </header>
-
-        <div class="container">
-            <div class="jumbotron bg-info">
-                <h1 class="h1 text-white">
-                    Dissenya i publica el teu lloc web
+        <div class="header-index">
+            <section class="header-index-content">
+                <img class="www-pointer animate-pop-in" src="img/www.png" />
+                <h1 class="header-index-title animate-pop-in">
+                    Dissenya, escriu i publica el teu lloc web
                 </h1>
-                <p class="lead text-white">
-                    En aquest tutorial t'ensenyarem tot el que necessites per tenir el teu propi
-                    lloc web publicat al núvol. Descobreix totes les etapes que cal seguir des que
-                    t'imagines el teu lloc fins que el publiques a Internet
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-header h5 text-center">
-                            Eines de disseny
-                        </div>
-                        <div class="card-img-top text-center">
-                            <a href="design_page.html">
-                                <img
-                                    src="img/design_tools.jpg"
-                                    width="256"
-                                    class="img-fluid img-thumbnail"
-                                />
-                            </a>
-                        </div>
-                        <div class="card-block text-center">
-                            <div class="card-title"></div>
-                            <div class="card-text"></div>
-                        </div>
+                <div class="row w-125">
+                    <div class="col-lg-3 col-md-6 header-index-button animate-pop-in">
+                        <a href="design_page.html" class="index-button">Eines de disseny</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 header-index-button animate-pop-in">
+                        <a href="languages_page.html" class="index-button">Llenguatges</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 header-index-button animate-pop-in">
+                        <a href="bundlers_page.html" class="index-button">Empaquetadors</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6 header-index-button animate-pop-in">
+                        <a href="hosting_page.html" class="index-button">Hosting</a>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card">
-                        <div class="card-header h5 text-center">
-                            Llenguatges
-                        </div>
-                        <div class="card-img-top text-center">
-                            <a href="languages_page.html">
-                                <img
-                                    src="img/languages.jpg"
-                                    width="256"
-                                    class="img-fluid img-thumbnail"
-                            /></a>
-                        </div>
-                        <div class="card-block text-center">
-                            <div class="card-title"></div>
-                            <div class="card-text"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md col-sm">
-                    <div class="card">
-                        <div class="card-header h5 text-center">
-                            Empaquetadors
-                        </div>
-                        <div class="card-img-top text-center">
-                            <a href="bundlers_page.html">
-                                <img
-                                    src="img/gift.png"
-                                    width="256"
-                                    class="img-fluid img-thumbnail"
-                                />
-                            </a>
-                        </div>
-                        <div class="card-block text-center">
-                            <div class="card-title"></div>
-                            <div class="card-text"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md col-sm">
-                    <div class="card">
-                        <div class="card-header h5 text-center">Hosting</div>
-                        <div class="card-img-top text-center">
-                            <a href="hosting_page.html">
-                                <img
-                                    src="img/cloud.jpg"
-                                    width="256"
-                                    class="img-fluid img-thumbnail"
-                                />
-                            </a>
-                        </div>
-                        <div class="card-block text-center">
-                            <div class="card-title"></div>
-                            <div class="card-text"></div>
-                        </div>
-                    </div>
-                </div>
+            </section>
+        </div>
+        <div class="header-index-after">
+            <div class="index-figure-caption">Photo by Javier Quesada on Unsplash</div>
+            <div class="tilted-text animate-right-to-left">
+                En aquest tutorial t'ensenyarem tot el que necessites per tenir el teu propi lloc
+                web publicat al núvol. Descobreix totes les etapes que cal seguir des que te
+                l'imagines fins que el publiques
             </div>
         </div>
 
