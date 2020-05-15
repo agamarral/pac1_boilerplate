@@ -45,4 +45,5 @@ function initColorPicker() {
   };
 }
 
+
 initColorPicker();

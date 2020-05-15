@@ -23,30 +23,54 @@
     </head>
 
     <body>
-        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+        <nav class="navbar navbar-light navbar-expand-lg">
             <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#myNav"
             >
-                <span class="navbar-toggler-icon"></span>
+                <span class="custom-toggler navbar-toggler-icon"></span>
             </button>
             <a href="index.html" class="navbar-brand">
-                <img src="./img/logo.png" width="78" heigth="69"
-            /></a>
+                <!-- <svg id="logo_svg" width="330" height="110"> -->
+                <svg id="logo_svg" width="330" height="110">
+                    <defs>
+                        <clipPath id="multiple-1">
+                            <circle cx="135" cy="20" r="13" />
+                            <circle cx="210" cy="90" r="20" />
+                            <polygon points="155 190, 215 190, 185,155" />
+                            <circle cx="50" cy="95" r="13" />
+                            <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
+                            <text
+                                x="45"
+                                y="65"
+                                font-family="Anton"
+                                font-weight="bold"
+                                font-size="1.5em"
+                            >
+                                Write Your WWW
+                            </text>
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#multiple-1)">
+                        <polygon points="110 10, 800 110, 110,220" fill="#edb74b" />
+                        <circle cx="110" cy="110" r="110" fill="#17a2b8" />
+                    </g>
+                </svg>
+            </a>
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
+                        <a href="./languages_page.html" class="nav-link active dropdown-toggle"
                             >escriure el codi</a
                         >
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="html.html">HTML</a>
-                            <a class="dropdown-item active" href="css.html">CSS</a>
+                            <a class="dropdown-item" href="css.html">CSS</a>
                             <a class="dropdown-item" href="javascript.html">Javascript</a>
                         </div>
                     </li>
@@ -112,18 +136,22 @@
 
                 <ul class="list-group">
                     <li class="list list-group-item list-group-item-yellow">
-                        <a href="https://developer.mozilla.org/ca/docs/Learn/CSS"
+                        <a
+                            class="animated-link"
+                            href="https://developer.mozilla.org/ca/docs/Learn/CSS"
                             >Introducció Mozilla a CSS</a
                         >: Aquest tutorial està escrit pels nois de Mozilla (editor de Firefox) i
                         està redactat en perfecte català de Tarragona.
                     </li>
                     <li class="list list-group-item list-group-item-yellow">
-                        <a href="https://www.w3schools.com/css/">CSS tutorial de W3Schools.</a>:
-                        Aquest tutorial també inclou un editor online que permet anar provant els
+                        <a class="animated-link" href="https://www.w3schools.com/css/"
+                            >CSS tutorial de W3Schools.</a
+                        >: Aquest tutorial també inclou un editor online que permet anar provant els
                         conceptes que va explicant.
                     </li>
                     <li class="list list-group-item list-group-item-yellow">
                         <a
+                            class="animated-link"
                             href="https://es.khanacademy.org/computing/computer-programming/html-css/intro-to-css/pt/css-basics"
                             >CSS básico de Khan Academy</a
                         >: Si et van més els vídeos, pots provar aquest tutorial de Khan Academy el
@@ -156,17 +184,33 @@
                     />
                 </div>
             </div>
-            <br /><br />
-            <p>
-                Un cop et sentis còmoda amb l'HTML i el CSS, si li vols aplicar dinamisme a la teva
-                pàgina i si t'atreveixes a explorar les infinites capacitats que t'ofereix el
-                Javascript, et proposo que passis a l'etapa següent:
-                <a href="javascript.html"
-                    ><i class="fa fa-jsfiddle" aria-hidden="true">Javascript</i></a
-                >
-            </p>
+            <section class="next_challenge animate_on_scroll">
+                <p>
+                    Un cop et sentis còmoda amb l'HTML i el CSS, si li vols aplicar dinamisme a la
+                    teva pàgina i si t'atreveixes a explorar les infinites capacitats que t'ofereix
+                    el Javascript, et proposo que passis a l'etapa següent:
+                    <a class="animated-link" href="javascript.html"
+                        ><i class="fa fa-jsfiddle" aria-hidden="true">Javascript</i></a
+                    >
+                </p>
+            </section>
         </div>
-
+        <footer>
+            <svg
+                id="myWave"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#17a2b8"
+                fill-opacity="1"
+                viewBox="0 0 1440 320"
+            >
+                <path
+                    d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,197.3C560,213,640,235,720,224C800,213,880,171,960,176C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                ></path>
+            </svg>
+            <div class="footer_text_left">Eines HTML i CSS I: PAC 2</div>
+            <div class="footer_text_right">Amaya Gamarra</div>
+        </footer>
+        <script src="./js/animate-on-scroll.js"></script>
         <!-- jQuery CDN -->
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

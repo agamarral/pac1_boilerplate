@@ -23,24 +23,48 @@
     </head>
 
     <body>
-        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+        <nav class="navbar navbar-light navbar-expand-lg">
             <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#myNav"
             >
-                <span class="navbar-toggler-icon"></span>
+                <span class="custom-toggler navbar-toggler-icon"></span>
             </button>
             <a href="index.html" class="navbar-brand">
-                <img src="./img/logo.png" width="78" heigth="69"
-            /></a>
+                <!-- <svg id="logo_svg" width="330" height="110"> -->
+                <svg id="logo_svg" width="330" height="110">
+                    <defs>
+                        <clipPath id="multiple-1">
+                            <circle cx="135" cy="20" r="13" />
+                            <circle cx="210" cy="90" r="20" />
+                            <polygon points="155 190, 215 190, 185,155" />
+                            <circle cx="50" cy="95" r="13" />
+                            <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
+                            <text
+                                x="45"
+                                y="65"
+                                font-family="Anton"
+                                font-weight="bold"
+                                font-size="1.5em"
+                            >
+                                Write Your WWW
+                            </text>
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#multiple-1)">
+                        <polygon points="110 10, 800 110, 110,220" fill="#edb74b" />
+                        <circle cx="110" cy="110" r="110" fill="#17a2b8" />
+                    </g>
+                </svg>
+            </a>
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
                     </li>
-                    <li class="nav-item active" dropdown>
+                    <li class="nav-item active">
                         <a
                             href="./languages_page.html"
                             class="nav-link dropdown-toggle"
@@ -50,7 +74,7 @@
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="html.html">HTML</a>
                             <a class="dropdown-item" href="css.html">CSS</a>
-                            <a class="dropdown-item" href="javascript.html">JavaScript</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript</a>
                         </div>
                     </li>
 
@@ -77,65 +101,58 @@
             </div>
         </nav>
 
-        <header class="headerMain">
-            <div class="container h-300"></div>
-        </header>
-
         <div class="container">
-            <div class="jumbotron doyellow">
-                <h1 class="h1 text-white">Escriu el teu lloc web</h1>
-                <p class="lead text-white">
+            <div class="animated_header animate_on_scroll">
+                <h2>Escriu el teu lloc web</h2>
+                <div class="lead">
                     Els llenguatges de programació web són un repte fàcil d'assolir. Només
                     necessites un xic de mètode, un polsim de paciència i un bon grapat de
                     perseverància. En aquesta pàgina t'oferim els tips per a que aprenguis tot el
                     que et cal per escriure el teu primer codi
-                </p>
-            </div>
-            <div class="row"></div>
-            <div class="row">
-                <div class="col align-self-top">
-                    <div class="">
-                        <p>
-                            Els navegadors web només són capaços d'interpretar 3 llenguatges:
-                            <a href="javascript.html">javascript</a>, <a href="html.html">html</a> i
-                            <a href="css.html">css</a>.
-                        </p>
-                        <p>
-                            Programar el teu lloc web no t'ha d'espantar, és una tasca accessible a
-                            tothom que tingui una mica de traça amb les noves tecnologies. Per sort,
-                            els programadors d'avui en dia ja no són aquells èssers estranys que
-                            teclejaven molt ràpid i que encertaven les contrassenyes a les
-                            pel·lícules d'espies. Els llenguatges de programació cada cop són de més
-                            alt nivell, el que vol dir que s'acosten poc a poc al nostre llenguatge
-                            natural. La programació comença a introduir-se a les escoles i en un
-                            futur no massa llunyà, serà tan necessari saber programar com saber
-                            sumar.
-                        </p>
-                        <p>
-                            En aquest tutorial parlarem una mica de cadascun d'aquests llenguatges i
-                            uns donarem
-                            <i>tips</i> de com arribar a dominar-los. Si el teu lloc no ha de
-                            recollir dades dels usuaris i pot tenir continguts més aviat estàtics,
-                            només et caldrà dominar html i CSS. Si li vols aportar una mica de
-                            dinamisme, textos que apareixen i desapareixen o dades que canvien a les
-                            pàgines, llavors et caldrà també aprendre una mica de javascript. Anem
-                            però pas a pas.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-sm align-self-top">
-                    <div class="">
-                        <img src="img/nerd.png" class="img-fluid" alt="programador raro" />
-                    </div>
                 </div>
             </div>
+
+            <div class="main_image">
+                <img
+                    class="animated_photo animate_on_scroll"
+                    src="img/nerd.png"
+                    alt="programador raro"
+                    srcset="img/nerd-600.png 600w, img/nerd.png 860w"
+                />
+                <div class="index-figure-caption">Nerd from PNG free images</div>
+            </div>
+
+            <p>
+                Els navegadors web només són capaços d'interpretar 3 llenguatges:
+                <a class="animated-link" href="javascript.html">javascript</a>,
+                <a class="animated-link" href="html.html">html</a> i
+                <a class="animated-link" href="css.html">css</a>.
+            </p>
+            <p>
+                Programar el teu lloc web no t'ha d'espantar, és una tasca accessible a tothom que
+                tingui una mica de traça amb les noves tecnologies. Per sort, els programadors
+                d'avui en dia ja no són aquells èssers estranys que teclejaven molt ràpid i que
+                encertaven les contrassenyes a les pel·lícules d'espies. Els llenguatges de
+                programació cada cop són de més alt nivell, el que vol dir que s'acosten poc a poc
+                al nostre llenguatge natural. La programació comença a introduir-se a les escoles i
+                en un futur no massa llunyà, serà tan necessari saber programar com saber sumar.
+            </p>
+            <p>
+                En aquest tutorial parlarem una mica de cadascun d'aquests llenguatges i uns donarem
+                <i>tips</i> de com arribar a dominar-los. Si el teu lloc no ha de recollir dades
+                dels usuaris i pot tenir continguts més aviat estàtics, només et caldrà dominar html
+                i CSS. Si li vols aportar una mica de dinamisme, textos que apareixen i desapareixen
+                o dades que canvien a les pàgines, llavors et caldrà també aprendre una mica de
+                javascript. Anem però pas a pas.
+            </p>
 
             <br />
             <p>
                 Primer de tot t'has de fer amb un bon editor de text que et faciliti la feina de
                 programar. Jo faig servir
-                <a href="https://code.visualstudio.com">Visual Studio Code</a>. Aquest editor
-                presenta, des del meu punt de vista, dues funcionalitats molt potents:
+                <a class="animated-link" href="https://code.visualstudio.com">Visual Studio Code</a
+                >. Aquest editor presenta, des del meu punt de vista, dues funcionalitats molt
+                potents:
             </p>
             <ol>
                 <li>
@@ -153,12 +170,11 @@
                     mentre escrius el codi o d'altres que te l'arreglen i te'l deixen ben "bonic".
                 </li>
             </ol>
-            <div>
-                <p>
-                    En el video següent et proposo un petit tutorial per aprendre a fer anar el
-                    Visual Studio Code.
-                </p>
-            </div>
+
+            <p>
+                En el video següent et proposo un petit tutorial per aprendre a fer anar el Visual
+                Studio Code.
+            </p>
 
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe
@@ -171,36 +187,53 @@
                 ></iframe>
             </div>
             <br /><br />
-            <p>
-                I arribats en aquest punt, és hora de passar a parlar dels llenguatges amb una mica
-                més de detall, si acceptes el repte pitja sobre una de les icones següents:
-            </p>
+            <section class="next_challenge animate_on_scroll">
+                <p>
+                    I arribats en aquest punt, és hora de passar a parlar dels llenguatges amb una
+                    mica més de detall, si acceptes el repte pitja sobre una de les icones següents:
+                </p>
 
-            <ul class="list-group-horizontal text-center">
-                <li class="list-inline-item">
-                    <a href="html.html"
-                        ><i class="fa fa-html5" aria-hidden="true">
-                            <p>HTML</p>
-                        </i></a
-                    >
-                </li>
-                <li class="list-inline-item">
-                    <a href="css.html"
-                        ><i class="fa fa-css3" aria-hidden="true">
-                            <p>CSS</p>
-                        </i></a
-                    >
-                </li>
-                <li class="list-inline-item">
-                    <a href="javascript.html"
-                        ><i class="fa fa-jsfiddle" aria-hidden="true">
-                            <p>JavaScript</p>
-                        </i></a
-                    >
-                </li>
-            </ul>
+                <ul class="list-group-horizontal text-center">
+                    <li class="list-inline-item">
+                        <a class="animated-link" href="html.html"
+                            ><i class="fa fa-html5" aria-hidden="true">
+                                <p>HTML</p>
+                            </i></a
+                        >
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="animated-link" href="css.html"
+                            ><i class="fa fa-css3" aria-hidden="true">
+                                <p>CSS</p>
+                            </i></a
+                        >
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="animated-link" href="javascript.html"
+                            ><i class="fa fa-jsfiddle" aria-hidden="true">
+                                <p>JavaScript</p>
+                            </i></a
+                        >
+                    </li>
+                </ul>
+            </section>
         </div>
-        <script src="./js/index.js"></script>
+        <footer>
+            <svg
+                id="myWave"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#17a2b8"
+                fill-opacity="1"
+                viewBox="0 0 1440 320"
+            >
+                <path
+                    d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,197.3C560,213,640,235,720,224C800,213,880,171,960,176C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                ></path>
+            </svg>
+            <div class="footer_text_left">Eines HTML i CSS I: PAC 2</div>
+            <div class="footer_text_right">Amaya Gamarra</div>
+        </footer>
+        <script src="./js/animate-on-scroll.js"></script>
         <!-- jQuery CDN -->
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

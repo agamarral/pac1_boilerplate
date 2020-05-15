@@ -23,18 +23,42 @@
     </head>
 
     <body>
-        <nav class="navbar bg-info navbar-dark navbar-expand-SM">
+        <nav class="navbar navbar-light navbar-expand-lg">
             <button
                 class="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#myNav"
             >
-                <span class="navbar-toggler-icon"></span>
+                <span class="custom-toggler navbar-toggler-icon"></span>
             </button>
             <a href="index.html" class="navbar-brand">
-                <img src="./img/logo.png" width="78" heigth="69"
-            /></a>
+                <!-- <svg id="logo_svg" width="330" height="110"> -->
+                <svg id="logo_svg" width="330" height="110">
+                    <defs>
+                        <clipPath id="multiple-1">
+                            <circle cx="135" cy="20" r="13" />
+                            <circle cx="210" cy="90" r="20" />
+                            <polygon points="155 190, 215 190, 185,155" />
+                            <circle cx="50" cy="95" r="13" />
+                            <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
+                            <text
+                                x="45"
+                                y="65"
+                                font-family="Anton"
+                                font-weight="bold"
+                                font-size="1.5em"
+                            >
+                                Write Your WWW
+                            </text>
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#multiple-1)">
+                        <polygon points="110 10, 800 110, 110,220" fill="#edb74b" />
+                        <circle cx="110" cy="110" r="110" fill="#17a2b8" />
+                    </g>
+                </svg>
+            </a>
             <div class="collapse navbar-collapse" id="myNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -50,15 +74,16 @@
                             <a class="dropdown-item" href="javascript.html">Javascript</a>
                         </div>
                     </li>
+
                     <li class="nav-item">
-                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
+                        <a href="./bundlers_page.html" class="nav-link active dropdown-toggle"
                             >preparar la distribució</a
                         >
                         <div class="dropdown-menu">
                             <a class="dropdown-item" href="packetmgrs_detail.html"
                                 >Els gestors de paquets</a
                             >
-                            <a class="dropdown-item active" href="bundlers_detail.html"
+                            <a class="dropdown-item" href="bundlers_detail.html"
                                 >Els package bundlers</a
                             >
                         </div>
@@ -73,32 +98,31 @@
             </div>
         </nav>
 
-        <header class="headerMain">
-            <div class="container h-300"></div>
-        </header>
-
         <div class="container">
             <h3>Els package bundlers</h3>
             <ul class="list-group">
                 <li class="list list-group-item list-group-item-green">
-                    <a href="https://parceljs.org">parcel</a> sembla ser el <i>bundler</i> més
-                    senzill de configurar perquè, simplement, no s'ha de configurar, a més, té
-                    moltes funcionalitats a la versió per defecte de manera que per a un ús de base,
-                    no requereix la instal·lació de plugins adicionals. Detecta automàticament els
-                    tipus de fitxers per la seva extensió i aplica la transformació que va bé en
-                    cada cas sense haver de configurar res. De tots tres <i>bundlers</i> sembla que
-                    és el gestiona més eficientment l'eliminació de codi mort, no només del que
-                    escrius tu sinó també del de les llibreries que s'importen a la teva aplicació.
+                    <a class="animated-link" href="https://parceljs.org">parcel</a> sembla ser el
+                    <i>bundler</i> més senzill de configurar perquè, simplement, no s'ha de
+                    configurar, a més, té moltes funcionalitats a la versió per defecte de manera
+                    que per a un ús de base, no requereix la instal·lació de plugins adicionals.
+                    Detecta automàticament els tipus de fitxers per la seva extensió i aplica la
+                    transformació que va bé en cada cas sense haver de configurar res. De tots tres
+                    <i>bundlers</i> sembla que és el gestiona més eficientment l'eliminació de codi
+                    mort, no només del que escrius tu sinó també del de les llibreries que
+                    s'importen a la teva aplicació.
                     <br />
                     Finalment, <a href="https://parceljs.org">parcel</a> integra un servidor web de
                     desenvolupament on va publicant i actualitzant el teu lloc per a que puguis
                     veure la seva evolució a mesura que el vas programant.
                 </li>
                 <li class="list list-group-item list-group-item-green">
-                    <a href="https://webpack.js.org">webpack</a> sembla imposar-se com el
-                    <i>bundler</i> de referència per a grans aplicacions. Els principals aventatges
-                    de <a href="https://webpack.js.org">webpack</a> són la manera en que gestiona
-                    l'escisió del codi, la recàrrega en calent i la substitució de mòduls en calent.
+                    <a class="animated-link" href="https://webpack.js.org">webpack</a> sembla
+                    imposar-se com el <i>bundler</i> de referència per a grans aplicacions. Els
+                    principals aventatges de
+                    <a class="animated-link" href="https://webpack.js.org">webpack</a> són la manera
+                    en que gestiona l'escisió del codi, la recàrrega en calent i la substitució de
+                    mòduls en calent.
                     <br />
                     Una escisió de codi intel·ligent fa que una aplicació es carregui més ràpidament
                     ja que només es carreguen les parts que l'usuari necessita a cada moment. Sense
@@ -111,25 +135,41 @@
                     molt de temps quan tens una aplicació molt gran entre mans.
                     <br />
                     Per acabar, el gran inconvenient de
-                    <a href="https://webpack.js.org">webpack</a>, sobretot respecte a
-                    <a href="https://parceljs.org">parcel</a>, és la dificultat que presenta
-                    configurar-lo ja que necessita molts <i>plugins</i> complementaris per a fer les
-                    mateixes coses que el darrer ja fa amb la seva versió de base.
+                    <a class="animated-link" href="https://webpack.js.org">webpack</a>, sobretot
+                    respecte a <a class="animated-link" href="https://parceljs.org">parcel</a>, és
+                    la dificultat que presenta configurar-lo ja que necessita molts
+                    <i>plugins</i> complementaris per a fer les mateixes coses que el darrer ja fa
+                    amb la seva versió de base.
                 </li>
                 <li class="list list-group-item list-group-item-green">
-                    <a href="https://rollupjs.org/guide/en/">rollup</a> sembla ser el
-                    <i>bundler</i> més adequat per a gestionar llibreries que no tinguin terceres
-                    dependències ja que, de tots tres <i>bundlers</i> és el més complicat de
-                    configurar quan s'han de gestionar aqueste. En la resta de funcionalitats mai
+                    <a class="animated-link" href="https://rollupjs.org/guide/en/">rollup</a> sembla
+                    ser el <i>bundler</i> més adequat per a gestionar llibreries que no tinguin
+                    terceres dependències ja que, de tots tres <i>bundlers</i> és el més complicat
+                    de configurar quan s'han de gestionar aqueste. En la resta de funcionalitats mai
                     queda el primer. Així per exemple, gestiona molt bé l'eliminació de codi mort
-                    però no tant bé com <a href="https://parceljs.org">parcel</a>. Gestiona molt bé
-                    l'escissió de codi i la càrrega de mòduls en calent però no tant bé com
-                    <a href="https://webpack.js.org">webpack</a> així que clarament és el favorit
-                    per empaquetar aplicacions de tamany mig.
+                    però no tant bé com
+                    <a class="animated-link" href="https://parceljs.org">parcel</a>. Gestiona molt
+                    bé l'escissió de codi i la càrrega de mòduls en calent però no tant bé com
+                    <a class="animated-link" href="https://webpack.js.org">webpack</a> així que
+                    clarament és el favorit per empaquetar aplicacions de tamany mig.
                 </li>
             </ul>
         </div>
-
+        <footer>
+            <svg
+                id="myWave"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#17a2b8"
+                fill-opacity="1"
+                viewBox="0 0 1440 320"
+            >
+                <path
+                    d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,197.3C560,213,640,235,720,224C800,213,880,171,960,176C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                ></path>
+            </svg>
+            <div class="footer_text_left">Eines HTML i CSS I: PAC 2</div>
+            <div class="footer_text_right">Amaya Gamarra</div>
+        </footer>
         <!-- jQuery CDN -->
         <script
             src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
