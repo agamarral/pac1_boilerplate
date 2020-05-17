@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+        <title>Write your own WWW</title>
         <!-- Bootstrap CSS CDN -->
         <link
             rel="stylesheet"
@@ -39,7 +39,6 @@
                         <clipPath id="multiple-1">
                             <circle cx="135" cy="20" r="13" />
                             <circle cx="210" cy="90" r="20" />
-                            <polygon points="155 190, 215 190, 185,155" />
                             <circle cx="50" cy="95" r="13" />
                             <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
                             <text
@@ -95,7 +94,7 @@
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
+                        <a href="./doc_pac2.html" class="nav-link">documentació PAC2</a>
                     </li>
                 </ul>
             </div>
@@ -146,15 +145,19 @@
                             Compil·lar-lo
                         </div>
                         <div class="card-img-top text-center">
-                            <img src="img/build_sw.jpg" class="img-fluid img-thumbnail" />
+                            <img
+                                src="img/build_sw.jpg"
+                                class="img-fluid img-thumbnail"
+                                alt="Un munt de màquines manipulen un mòbil per provar-lo"
+                            />
                         </div>
                         <div class="card-block">
                             <div class="card-text bundler-card-text">
                                 Per compil·lar un lloc web fem servir
-                                <i>gestors de paquets</i> que fan del teu lloc web un paquet més i
-                                s'asseguren de que totes les dependències, o altrament dit, tot el
-                                software extern que fem servir en la nostra aplicació, estan ben
-                                actualitzades a la versió que toca. Així mateix els gestors de
+                                <cite>gestors de paquets</cite> que fan del teu lloc web un paquet
+                                més i s'asseguren de que totes les dependències, o altrament dit,
+                                tot el software extern que fem servir en la nostra aplicació, estan
+                                ben actualitzades a la versió que toca. Així mateix els gestors de
                                 paquets permeten automatitzar les tasques de compil·lació de
                                 fitxers, preparació de la distribució, empaquetament i proves. És a
                                 dir, l'ús del paquet bundler i de l'autòmata de proves es
@@ -164,7 +167,7 @@
                                 tenir el lloc llest per publicar.
                                 <br />
                                 <br />
-                                Els <i>package managers</i> més populars en l'actualitat són:
+                                Els <cite>package managers</cite> més populars en l'actualitat són:
 
                                 <span>
                                     <a class="animated-link" href="https://www.npmjs.com">npm</a>,
@@ -181,27 +184,31 @@
                             Empaquetar-lo
                         </div>
                         <div class="card-img-top text-center">
-                            <img src="img/gif-packaging-4.gif" class="img-fluid img-thumbnail" />
+                            <img
+                                src="img/gif-packaging-4.gif"
+                                class="img-fluid img-thumbnail"
+                                alt="paquet"
+                            />
                         </div>
                         <div class="card-block">
                             <div class="card-text bundler-card-text">
                                 Per empaquetar una aplicació web fem servir
-                                <i>package bundlers </i> que, com el seu nom indica, fan un farcell
-                                amb tots els fitxers del lloc. Bàsicament recuperen tot el codi i el
-                                condensen en el mínim espai possible. Per exemple, el·liminen els
-                                espais en blanc dels fitxers html i css per tal de reduir el seu
-                                tamany o comprimeixen les imatges. <br />
+                                <cite>package bundlers </cite> que, com el seu nom indica, fan un
+                                farcell amb tots els fitxers del lloc. Bàsicament recuperen tot el
+                                codi i el condensen en el mínim espai possible. Per exemple,
+                                el·liminen els espais en blanc dels fitxers html i css per tal de
+                                reduir el seu tamany o comprimeixen les imatges. <br />
                                 <br />
                                 Una altra funcionalitat interessant dels
-                                <i>package bundlers</i> és que només posen al farcell aquells
+                                <cite>package bundlers</cite> és que només posen al farcell aquells
                                 fitxers que es fan servir al teu lloc web. És bastant ususal que es
                                 quedin fitxers que després no fas servir, com per exemple una imatge
                                 que t'agradava inicialment però que has finalment remplaçat per una
-                                altra que t'agradava més, el <i>bundler</i>
+                                altra que t'agradava més, el <cite>bundler</cite>
                                 simplement no les sel·lecciona per ser incloses a la distribució.
                                 <br />
                                 <br />
-                                Els <i>package bundlers</i> més populars en l'actualitat són:
+                                Els <cite>package bundlers</cite> més populars en l'actualitat són:
                                 <span>
                                     <a class="animated-link" href="https://parceljs.org">parcel</a>,
                                     <a class="animated-link" href="https://webpack.js.org"
@@ -223,6 +230,7 @@
                             <img
                                 src="img/Computer-Based-Testing.jpg"
                                 class="img-fluid img-thumbnail"
+                                alt="El teclat conté una tecla marcada com a Test"
                             />
                         </div>
                         <div class="card-block">
@@ -241,7 +249,7 @@
                 Acceptes el repte
 
                 <a class="text-center" href="bundlers_detail.html"
-                    ><i class="fa fa-arrow-circle-o-right" aria-hidden="true"> </i></a
+                    ><cite class="fa fa-arrow-circle-o-right" aria-hidden="true"> </cite></a
                 >?
             </p>
         </section>

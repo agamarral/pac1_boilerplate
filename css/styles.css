@@ -42,9 +42,14 @@ h2 {
 }
 
 .header-index:before {
-    animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
-        url(../img/index-background-huge.jpg) no-repeat bottom;
+    animation: fade-slide-down 2s cubic-bezier(0, 0.5, 0, 1) 0.5s forwards;
+    background: image-set(
+            url('../img/index-background-8x.jpg') 8x,
+            url('../img/index-background-3x.jpg') 3x,
+            url('../img/index-background-2x.jpg') 2x,
+            url('../img/index-background-1x.jpg') 1x
+        ),
+        no-repeat bottom;
     background-size: cover;
     bottom: 0;
     content: '';
@@ -155,14 +160,8 @@ h2 {
     margin-right: auto;
     margin-top: 0px;
     opacity: 0;
-    -webkit-transform: translateY(4em) rotateZ(-5deg);
     transform: translateY(4em) rotateZ(-5deg);
-    -webkit-transition: opacity 0.3s 0.25s ease-out,
-        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
-    transition: opacity 0.3s 0.25s ease-out, -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
     transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out;
-    transition: transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1), opacity 0.3s 0.25s ease-out,
-        -webkit-transform 4s 0.25s cubic-bezier(0, 1, 0.3, 1);
 
     will-change: transform, opacity;
 }
@@ -236,7 +235,7 @@ iframe {
     margin-bottom: 10px;
 }
 .jumbotron-code pre {
-    color: rgb(212, 182, 192);
+    color: #757575;
 }
 .dropdown-menu {
     right: auto;
@@ -268,13 +267,6 @@ input {
 }
 .container li {
     padding-top: 10px;
-}
-.svgtext {
-    font-family: 'Martel Sans';
-    font-weight: bold;
-    font-size: 32px;
-    text-anchor: middle;
-    border: solid 1px red;
 }
 
 footer {
@@ -320,6 +312,11 @@ footer {
 }
 #myWave path {
     width: 100vw;
+}
+.table {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Animations */
@@ -429,17 +426,6 @@ footer {
 }
 /* laptop */
 @media screen and (min-width: 1200px) {
-    .dropdown-menu {
-        top: 75px;
-    }
-    .main_image {
-        height: 50vh;
-    }
-    .footer_text_left,
-    .footer_text_right {
-        font-size: 20px;
-        bottom: 10px;
-    }
     @keyframes right-to-left {
         0% {
             opacity: 0;
@@ -453,17 +439,10 @@ footer {
     }
 }
 @media screen and (min-width: 1800px) {
-    .dropdown-menu {
-        top: 75px;
-    }
     .tilted-text {
         margin-top: 4rem;
     }
-    .footer_text_left,
-    .footer_text_right {
-        font-size: 20px;
-        bottom: 10px;
-    }
+
     @keyframes right-to-left {
         0% {
             opacity: 0;

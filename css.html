@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
+        <title>Write your own WWW</title>
         <!-- Bootstrap CSS CDN -->
         <link
             rel="stylesheet"
@@ -39,7 +39,6 @@
                         <clipPath id="multiple-1">
                             <circle cx="135" cy="20" r="13" />
                             <circle cx="210" cy="90" r="20" />
-                            <polygon points="155 190, 215 190, 185,155" />
                             <circle cx="50" cy="95" r="13" />
                             <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
                             <text
@@ -92,7 +91,7 @@
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./doc_pac1.html" class="nav-link">documentació PAC1</a>
+                        <a href="./doc_pac2.html" class="nav-link">documentació PAC2</a>
                     </li>
                 </ul>
             </div>
@@ -106,10 +105,11 @@
             <ul>
                 <li>
                     Que les seves sigles signifiquen
-                    <i>Cascading Style Sheets</i>, el que significa que és un llenguatge que serveix
-                    exclusivament per a donar estil o format a les etiquetes HTML i que s'aplica en
-                    cascada. Es va inventar molt més tard que HTML i fins llavors, l'estil s'incloia
-                    dins de cada etiqueta el que era, evidentment, molt incòmode per al programador.
+                    <cite>Cascading Style Sheets</cite>, el que significa que és un llenguatge que
+                    serveix exclusivament per a donar estil o format a les etiquetes HTML i que
+                    s'aplica en cascada. Es va inventar molt més tard que HTML i fins llavors,
+                    l'estil s'incloia dins de cada etiqueta el que era, evidentment, molt incòmode
+                    per al programador.
                 </li>
 
                 <li>
@@ -177,6 +177,19 @@
                     </p>
                 </div>
                 <div class="col-md">
+                    <picture>
+                        <source
+                            media="(max-width: 899px)"
+                            srcset="img/style-inspector-cropped.png"
+                        />
+                        <source media="(min-width: 900px)" srcset="img/style-inspector.png" />
+                        <img
+                            src="img/style-inspector.png"
+                            class="img-fluid"
+                            alt="inspector estils de Firefox"
+                        />
+                    </picture>
+
                     <img
                         src="img/style-inspector.png"
                         class="img-fluid"
@@ -190,7 +203,7 @@
                     teva pàgina i si t'atreveixes a explorar les infinites capacitats que t'ofereix
                     el Javascript, et proposo que passis a l'etapa següent:
                     <a class="animated-link" href="javascript.html"
-                        ><i class="fa fa-jsfiddle" aria-hidden="true">Javascript</i></a
+                        ><cite class="fa fa-jsfiddle" aria-hidden="true">Javascript</cite></a
                     >
                 </p>
             </section>

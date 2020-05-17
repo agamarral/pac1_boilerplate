@@ -1,0 +1,452 @@
+<html lang="cat">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Write your own WWW</title>
+        <!-- Bootstrap CSS CDN -->
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <!--font family-->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg">
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#myNav"
+            >
+                <span class="custom-toggler navbar-toggler-icon"></span>
+            </button>
+            <a href="index.html" class="navbar-brand">
+                <!-- <svg id="logo_svg" width="330" height="110"> -->
+                <svg id="logo_svg" width="330" height="110">
+                    <defs>
+                        <clipPath id="multiple-1">
+                            <circle cx="135" cy="20" r="13" />
+                            <circle cx="210" cy="90" r="20" />
+                            <circle cx="50" cy="95" r="13" />
+                            <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
+                            <text
+                                x="45"
+                                y="65"
+                                font-family="Anton"
+                                font-weight="bold"
+                                font-size="1.5em"
+                            >
+                                Write Your WWW
+                            </text>
+                        </clipPath>
+                    </defs>
+                    <g clip-path="url(#multiple-1)">
+                        <polygon points="110 10, 800 110, 110,220" fill="#edb74b" />
+                        <circle cx="110" cy="110" r="110" fill="#17a2b8" />
+                    </g>
+                </svg>
+            </a>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="./design_page.html" class="nav-link">dissenyar el lloc</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="./languages_page.html" class="nav-link dropdown-toggle"
+                            >escriure el codi</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="html.html">HTML</a>
+                            <a class="dropdown-item" href="css.html">CSS</a>
+                            <a class="dropdown-item" href="javascript.html">Javascript</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./bundlers_page.html" class="nav-link dropdown-toggle"
+                            >preparar la distribució</a
+                        >
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="packetmgrs_detail.html"
+                                >Els gestors de paquets</a
+                            >
+                            <a class="dropdown-item" href="bundlers_detail.html"
+                                >Els package bundlers</a
+                            >
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./doc_pac2.html" class="nav-link">documentació PAC2</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <header class="headerMain">
+            <div class="container h-300"></div>
+        </header>
+
+        <div class="container">
+            <p>
+                En la implementació del lloc web he donat prioritat a provar el màxim de tècniques
+                de tractament d'imatge i d'animació sense buscar un resultat artísticament
+                espectacular. Les imatges són majoritàriament descarregades de
+                <a class="animated-link" href="https://unsplash.com">Unsplash</a> o de pàgines de
+                PNGs gratuïts. Finalment, algunes són generades per mi o són còpies de pantalla
+                realitzades durant l'ús d'algunes aplicacions.
+            </p>
+            <p>
+                De la bibliografia/videografia recomanada al M3 pel tractament d'imatges destaco com
+                a útils l'article
+                <a
+                    class="animated-link"
+                    href="https://cloudfour.com/thinks/responsive-images-101-definitions/"
+                    >responsive-images-101-definitions</a
+                >
+                i el video de Cristina Chumillas. Són sens dubte enllaços a desar als marcadors.
+            </p>
+            <h3>Elecció dels media queries</h3>
+            <p>
+                Tot i que el meu lloc inicialment està implementat amb Bootstrap que facilita
+                enormement la gestió dels canvis de tamany de viewport, m'he decidit a implementar
+                algunes parts amb CSS pur. El lloc és <i> mobile first </i> i per l'el·lecció dels
+                media queries vaig buscar quina era la estratègia més recomanada i vaig topar amb
+                l'article
+                <a
+                    class="animated-link"
+                    href="https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/"
+                    >The 100 correct way to do CSS breakpoints</a
+                >. Em va semblar encertat el plantejament i per això he implementat els següents
+                media queries:
+            </p>
+            <div class="jumbotron jumbotron-code rounded-0">
+                <pre><code>
+        @media screen and (max-width: 599px) {
+
+        }
+        /* tablet portrait */
+        @media screen and (min-width: 600px) {
+
+        }
+        /* tablet landscape */
+        @media screen and (min-width: 900px) {
+
+        }
+        /* laptop */
+        @media screen and (min-width: 1200px) {
+
+        }
+        @media screen and (min-width: 1800px) {
+
+        }
+            </code></pre>
+            </div>
+
+            <h3>Bootstrap</h3>
+            <p>
+                Tal i com he mencionat prèviament, he seguit fent servir Bootstrap, en particular
+                per simplificar-me la vida en temes de responsiveness. L'aparença d'aquest framework
+                ha estat remplaçada en gran part per regles CSS custom.
+            </p>
+            <h3>El boilerplate</h3>
+            <p>
+                El Boilerplate resta exactament igual a com va quedar al final de la PAC1, l'eina
+                <i>parcel-plugin-imagemin</i>
+                l'havia descobert durant aquesta primera pràctica i ja l'havia integrada al
+                boilerplate.
+            </p>
+            <h3>La capçalera</h3>
+            <p>
+                La capçalera que proposo en aquesta PEC2 no te gaire en comú amb la que vaig
+                implementar per la primera PAC. El logo ha estat remplaçat per un SVG i per tal de
+                donar-li més lleugeresa a les pàgines, he canviat els colors de la barra de menú,
+                ara el fons és blanc i el text pren el mateix color blau que el logo. El logo és una
+                combinació de 2 <i>clip-paths</i>múltiples. El primer <i>clip-path</i> conté 3
+                cercles, un estel i el text. Un segon <i>clip-path</i> format per un cercle blau i
+                un triangle ocre es superposa a les primeres figures pintant-les d'aquesta manera :
+            </p>
+            <div class="jumbotron jumbotron-code rounded-0">
+                <pre><code>
+        <svg id="logo_svg" width="330" height="110">
+            <defs>
+                <clipPath id="multiple-1">
+                    <circle cx="135" cy="20" r="13" />
+                    <circle cx="210" cy="90" r="20" />
+                    <circle cx="50" cy="95" r="13" />
+                    <polygon points="295 32, 265 116, 335 66, 255 66, 325 116" />
+                    <text x="45" y="65" font-family="Anton" font-weight="bold" font-size="1.5em">
+                        Write Your WWW
+                    </text>
+                </clipPath>
+            </defs>
+            <g clip-path="url(#multiple-1)">
+                <polygon points="110 10, 800 110, 110,220" fill="#edb74b" />
+                <circle cx="110" cy="110" r="110" fill="#17a2b8" />
+            </g>
+        </svg>
+        </code></pre>
+            </div>
+            El fet de canviar el menú a la versió <i>light</i> m'ha forçat a implementar l'icona del
+            menú "hamburguesa" com un altre SVG, haig de dir que aquest dibuix l'he trobat en algun
+            article de <a class="animated-link" href="https://stackoverflow.com/">Stackoverflow</a>.
+
+            <h3>El peu</h3>
+            <p>
+                Puc dir que el peu del lloc web ha estat un gran laboratori de clip-paths.
+                Inicialment l'havia plantejat com un poligon en forma de serra pels extrems i que
+                canviava el nombre de puntes segons l'ample de la pàgina. No obstant, tanta punta no
+                li donava un aspecte armònic al lloc i em vaig decidir per afegir una onada. Però jo
+                no volia una onada sinusoïdal i vaig descobrir l'eina,
+                <a class="animated-link" href="https://getwaves.io/">Get Waves</a> de
+                <i>z creative labs</i>. Més tard vaig tenir grans problemes amb el text que havia
+                d'anar superposat ja que l'havia integrat com a part del SVG. El problema era que el
+                tamany d'aquest variava massa entre <i>viewports</i> estrets i amples i, o no es
+                llegia en els primers, o quedava massa gran en els darrers. Finalment vaig optar per
+                afegir el text com a block posicionat de manera absoluta i gestionar el seu canvi de
+                posició amb media queries
+            </p>
+            <h3>La pàgina de benvinguda</h3>
+            <p>
+                La pàgina de benvinguda ha estat completament redissenyada, la primera era massa
+                carregada i he aprofitat per practicar algunes animacions. Es composa d'una imatge
+                en background que es serveix amb 4 densitats possibles mitjançant la crida a
+                image-set. Per fer-la <i>responsive</i> he aplicat <i>resolutin switching</i> perquè
+                el seu contingut s'adapta bé a tots els tamanys de <i>viewport</i>. Sota la imatge
+                apareix un triangle rectangle invertit en els <i>viewports</i> de més de 900 px
+                d'amplada. Es forma mitjançant d'un <i>clip-path</i> de dimensions relatives.
+                Aquesta zona conté un text de presentació que pren la inclinació de la hipotenusa
+                del triangle. En les pantalles més estretes el text no cabia en el triangle
+                resultant així que aquest passa a ser un rectangle. Des d'aquesta pàgina es pot
+                accedir directament als menus de categoria
+            </p>
+            <p>
+                En quant a les animacions, aquesta pàgina en conté tres i totes elles fan ús de
+                <i>keyframes</i>. La imatge principal amb l'animació <i>fade-slide-down</i> comença
+                a aparèixer 0.5 segons deprès de començar a carregar-se la pàgina i triga 2 segons
+                en enquadrar-se al seu destí final.
+            </p>
+            <p>
+                Just desprès entra el text inclinat des de la dreta de la pantalla, i a les
+                pantalles amples, acaba inclinant-se. Aquesta animació l'he haguda de tractar als
+                media queries perquè la inclinació final ha de variar segons el tamany del
+                <i>viewport</i>.
+            </p>
+            <p>
+                Per acabar, faig aparèixer ordenadament l'icona central, el títol principal i els
+                enllaços a les pàgines de categoria. Per això faig servir la mateixa animació i jugo
+                amb el retard d'aparició. A totes les animacions he optat per fer servir una funció
+                temporal tipus <i>cubic-bezier</i>, que fa més suau les aparicions. Per determinar
+                els paràmetres, m'he recolzat en l'eina proposada per
+                <a class="animated-link" href="https://cubic-bezier.com/">Cubic Bezier</a>
+            </p>
+
+            <h3>Les pàgines de categoria</h3>
+            <p>
+                Totes les pàgines de categoria segueixen un format equivalent i totes contenen un
+                títol, un text introductori (que a la PAC1 es trobava dins d'un quadre de color) i
+                una imatge principal, aquesta darrera d'acord al que es demanava a l'enunciat de la
+                pràctica. He escollit imatges que siguin adequades per a tot ample de pantalla, de
+                manera que la seva responsivitat està gestionada amb <i>resolution switching</i>.
+                Aquestes imatges apareixen a la pantalla <i>on-scroll</i> i per això he hagut
+                d'implementar una mica de <i>Javascript</i> (veure fitxer
+                <i>animate-on-scroll.js</i>. La idea és que els elements que han d'animar-se es
+                marquin amb la classe <i>is_visible</i>. Per determinar si un element es troba a la
+                part visible de la pantalla, he recuperat la funció de <i>isElementInViewport</i> de
+                <a class="animated-link" href="https://stackoverflow.com/">Stackoverflow</a>. Aquest
+                cop no he fet servir <i>keyframes</i> i m'he limitat a jugar amb les transicions. En
+                el cas de les imatges, quan són marcades com a visibles, la seva opacitat va passant
+                de 0 a 1 alhora que es produeix un petit moviment de translació vertical i que es
+                gira lleugerament la imatge. En el cas del títol, em limito a jugar amb l'opacitat,
+                sinó serien massa elements "ballant" i podria quedar massa sobrecarregat
+            </p>
+            <p>
+                Els consells, que abans afegia al final de les pàgines per tal d'animar el lector a
+                passar a la pàgina següent, apareixen ara en forma de <i>post-it</i> animat des de
+                la dreta de la pantalla mitjançant una transició.
+            </p>
+            <p>
+                I ja per acabar amb el tema de les animacions, la majoria dels links que es troben
+                al text del lloc, són animats. Quan es passa per sobre d'un enllaç, la linia de
+                subratllat es redibuixa. Per aconseguir aquest efecte, he posat una vora al
+                pseudoelement <i>after</i> associat als enllaços i animo aquesta vora quan es fa
+                <i>hover</i> sobre l'enllaç
+            </p>
+            <h3>Les imatges i el seu tamany/format</h3>
+            <p>Al lloc web he implementat tres tipus diferents de tactament d'imatge:</p>
+            <ul>
+                <li>
+                    En el cas de la pàgina de benvinguda trobem una imatge de <i>background</i> amb
+                    responsivitat de tipus <i>resolution switching</i>. Com és una imatge de
+                    <i>background</i> he hagut de fer servir l'atribut <i>image-set</i> mitjançant
+                    el qual li passo al navegador:
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom Fitxer</th>
+                                <th scope="col">Dimensions de la imatge</th>
+                                <th scope="col">Tamany de la imatge</th>
+                                <th scope="col">Resolució recomanada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>index-background-1x.jpg</td>
+                                <td>972x648 px</td>
+                                <td>131KB</td>
+                                <td>1x</td>
+                            </tr>
+                            <tr>
+                                <td>index-background-2x.jpg</td>
+                                <td>1555x1037 px</td>
+                                <td>262KB</td>
+                                <td>2x</td>
+                            </tr>
+                            <tr>
+                                <td>index-background-4x.jpg</td>
+                                <td>2061x1374 px</td>
+                                <td>422KB</td>
+                                <td>3x</td>
+                            </tr>
+                            <tr>
+                                <td>index-background-8x.jpg</td>
+                                <td>3888x2592 px</td>
+                                <td>1MB</td>
+                                <td>8x</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    Els formats proposats es relacionen entre ells en un factor n que multiplica el
+                    tamany del fitxer .
+                </li>
+                <li>
+                    En el cas de les imatges principals de les pàgines de categoria, he fet servir
+                    l'atribut sizes que simplifica enormement l'edició i la preparació del conjunt
+                    d'imatges proposades. Els tamanys oferts són calcats als dels media queries. Si
+                    prenem a mode d'exemple la imatge <i>website-design.jpg</i> de la pàgina
+                    <i>design_page.html</i>, les imatges proposades són:
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nom Fitxer</th>
+                                <th scope="col">Dimensions de la imatge</th>
+                                <th scope="col">Tamany de la imatge</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>website-design-600.jpg</td>
+                                <td>600x399 px</td>
+                                <td>74KB</td>
+                            </tr>
+                            <tr>
+                                <td>website-design-1200.jpg</td>
+                                <td>1200x798 px</td>
+                                <td>197KB</td>
+                            </tr>
+                            <tr>
+                                <td>website-design-1800.jpg</td>
+                                <td>1800x1197 px</td>
+                                <td>328KB</td>
+                            </tr>
+                            <tr>
+                                <td>website-design.jpg</td>
+                                <td>4193x2785 px</td>
+                                <td>1MB</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    Tret del darrer fitxer que és l'original i que està destinat a pantalles 4K, la
+                    relació de tamany de fitxer entre les tres primeres està entre 1.6 i 2.6, el que
+                    ve a quadrar amb les recomanacions de la Cristina Chumillas de fixar els
+                    <i>breakpoints</i> allà on es duplica el tamany del fitxer.
+                </li>
+                <li>
+                    I ja per acabar, la responsivitat de les imatges interiors de les pàgines de
+                    categories està gestionada amb <i>art direction</i>, més per l'exercici en sí
+                    que per necessitat. Quan la imatge és un dibuix fet per mi (exemple diagrama
+                    d'arbre de <i>design_page.html</i>), la proposo en format <i>SVG</i>, en cas
+                    contrari, faig servir el format <i>PNG</i> que suporta transparència. El
+                    breakpoint d'<cite>art direction</cite> l'he fixat a 900 pixels que és el tamany
+                    de <cite>viewport</cite> màxim d'un dispositiu mòbil, si prenem en compte que
+                    els Iphones fan servir doble densitat. Per tant, la imatge lleugera, a més de
+                    ser retallada, també és escalada a un ample de 900 pixels per tal que el tamany
+                    del fitxer sigui coherent amb l'amplada de les pantalles que el carreguen.
+                </li>
+            </ul>
+            <h3>La prova d'accesibilitat</h3>
+            <p>
+                He passat totes les pàgines (excepte aquesta de documentació) per l'eina
+                <a class="animated-link" href="https://achecker.ca/checker/">AChecker</a> i he
+                aconseguit corregir gairebé totes les errades que anaven apareixent, que
+                afortunadament eren poques. Malauradament, no he sabut corregir l'errada sobre el
+                llenguatge utilitzat a la pàgina, pel que he vist, el català ja es troba a
+                l'especificatió ISO 639 i el seu codi és "ca"...
+
+                <img src="img/achecker.png" class="img-fluid" alt="errada so" />
+            </p>
+
+            I fins aquí arriba el detall de les meves aventures..feliç lectura!
+        </div>
+        <footer>
+            <svg
+                id="myWave"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#17a2b8"
+                fill-opacity="1"
+                viewBox="0 0 1440 320"
+            >
+                <path
+                    d="M0,192L40,186.7C80,181,160,171,240,170.7C320,171,400,181,480,197.3C560,213,640,235,720,224C800,213,880,171,960,176C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+                ></path>
+            </svg>
+            <div class="footer_text_left">Eines HTML i CSS I: PAC 2</div>
+            <div class="footer_text_right">Amaya Gamarra</div>
+        </footer>
+        <!-- jQuery CDN -->
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <!-- jQuery local fallback -->
+        <script>
+            window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
+        </script>
+        <!-- popper CDN-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS CDN -->
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- Bootstrap JS local fallback -->
+        <script>
+            if (typeof $.fn.modal === 'undefined') {
+                document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
+                $('head').prepend(
+                    '<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">'
+                );
+            }
+        </script>
+    </body>
+</html>
