@@ -1,25 +1,24 @@
+<!DOCTYPE html>
 <html lang="ca">
     <head>
         <meta charset="utf-8" />
+        <meta name="Description" content="Bundlers page" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <title>Write your own WWW</title>
-        <!-- Bootstrap CSS CDN -->
         <link
-            rel="stylesheet"
+            rel="preload stylesheet"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&display=swap"
+            as="style"
+        />
+
+        <link
+            rel="preload stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
+            as="style"
         />
-        <!--font family-->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="preload stylesheet" href="css/styles.css" as="style" />
     </head>
 
     <body>
@@ -92,9 +91,6 @@
                     </li>
                     <li class="nav-item">
                         <a href="./hosting_page.html" class="nav-link">publicar el meu lloc web</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="./doc_pac2.html" class="nav-link">documentació PAC2</a>
                     </li>
                 </ul>
             </div>
@@ -268,17 +264,12 @@
             <div class="footer_text_left">Eines HTML i CSS I: PAC 2</div>
             <div class="footer_text_right">Amaya Gamarra</div>
         </footer>
-        <script src="./js/animate-on-scroll.js"></script>
-        <!-- jQuery CDN -->
+        <!-- jQuery -->
         <script
-            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
             crossorigin="anonymous"
         ></script>
-        <!-- jQuery local fallback -->
-        <script>
-            window.jQuery || document.write("<script src='lib/jquery/js/jquery.min.js'><\/script>");
-        </script>
         <!-- popper CDN-->
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -291,14 +282,7 @@
             integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"
         ></script>
-        <!-- Bootstrap JS local fallback -->
-        <script>
-            if (typeof $.fn.modal === 'undefined') {
-                document.write('<script src="lib/bootstrap/js/bootstrap.min.js"><\/script>');
-                $('head').prepend(
-                    '<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">'
-                );
-            }
-        </script>
+        <script src="./js/animate-on-scroll.js"></script>
+        <script src="./js/animate-on-scroll.js"></script>
     </body>
 </html>
